@@ -86,7 +86,7 @@ class RigidBodyDynamics(ABC):
         if info:
             self._show_kinematic_tree()
 
-    # -------------------- Internal methods -------------------- #    
+    # -------------------- Internal and helper methods -------------------- #    
     def _show_kinematic_tree(self):
         print("-"*20," Kinematic Tree ","-"*20)
         for i in range(1, self.rmodel.njoints):
@@ -183,6 +183,11 @@ class RigidBodyDynamics(ABC):
             self.phi_nom[j+4: j+10] = Ixx, Ixy, Iyy, Ixz, Iyz, Izz
 
     def _compute_bounding_ellipsoids(self):
+        """
+        Compute bounding ellipsoids for each link based on visual geometry in URDF.
+        The ellipsoid is represented by its semi-axes lengths and center position in the link frame
+        This is used for physical consistency constrains for LMI identification method.
+        """
         self.bounding_ellipsoids = []
         robot = URDF.from_xml_file(self.urdf_path)
         for link in robot.links:
@@ -345,7 +350,168 @@ class RigidBodyDynamics(ABC):
         return self.Y
     
     # -------------------- Momentum_based Regressor -------------------- #
-    # TODO: Need to add Momentum based regressor, so we avoid ddq measurements
+    def _crm(self, v6: np.ndarray) -> np.ndarray:
+        """
+        Spatial cross-product operator for motion vectors (Pinocchio order [w; v]).
+        Returns 6x6 matrix such that (v x) * u = v.cross(u) for motions.
+        """
+        w = v6[:3]
+        v = v6[3:]
+        W = pin.skew(w)
+        V = pin.skew(v)
+        # motion cross operator
+        return np.block([
+            [W, np.zeros((3, 3))],
+            [V, W]
+        ])
+
+    def _crf(self, v6: np.ndarray) -> np.ndarray:
+        """
+        Spatial cross-product operator for force (dual) vectors (Pinocchio order [n; f]).
+        Returns 6x6 matrix such that (v x*) * f = v.cross(f) for forces.
+        In Featherstone: crf(v) = -crm(v).T
+        """
+        return -self._crm(v6).T
+
+    def _Y_momentum_local(self, v_i: pin.Motion) -> np.ndarray:
+        """
+        Local 6x10 regressor Y^(m)(v) such that:
+        h_i = I_i * v_i = Y_m(v_i) * phi_i
+        with phi_i in Pinocchio order [m, hx, hy, hz, Ixx, Ixy, Iyy, Ixz, Iyz, Izz].
+
+        Convention: motion is [w; v], force/momentum is [n; f] (your convention).
+        """
+        omega = np.asarray(v_i.angular).reshape(3)
+        vlin  = np.asarray(v_i.linear).reshape(3)
+
+        Y = np.zeros((6, 10), dtype=np.float64)
+
+        # angular momentum: n = Ibar*omega + h x vlin = Ibar*omega - skew(vlin)*h
+        Y[0:3, 1:4]  = -pin.skew(vlin)                 # multiplies h
+        Y[0:3, 4:10] = self._braket_operator(omega)    # multiplies inertia params
+
+        # linear momentum: f = m*vlin + omega x h = vlin*m + skew(omega)*h
+        Y[3:6, 0]    = vlin
+        Y[3:6, 1:4]  = pin.skew(omega)
+
+        return Y
+
+    def _Y_momentum_rate_local(self, v_i: pin.Motion, a_i: pin.Motion, R_i: np.ndarray) -> np.ndarray:
+        """
+        Local 6x10 regressor Y^(dot m)(v,a) such that:
+        dot(h_i) = I_i * a_i + v_i x* (I_i*v_i) = Y_dot_m(v_i, a_i)*phi_i
+
+        Gravity inclusion:
+        we subtract local gravity from the *linear* part of spatial acceleration used in Y_m(a).
+        This mirrors your classical regressor style (subtract g_local).
+        """
+        # Convert to numpy
+        v6 = np.hstack([np.asarray(v_i.angular).reshape(3), np.asarray(v_i.linear).reshape(3)])
+
+        # Build an "effective acceleration" a_eff where linear part includes gravity
+        a_ang = np.asarray(a_i.angular).reshape(3)
+        a_lin = np.asarray(a_i.linear).reshape(3)
+
+        g_local = R_i.T @ self.g  # self.g is model gravity linear (world), convert to local
+        a_lin_eff = a_lin - g_local
+
+        a_eff = pin.Motion(a_ang, a_lin_eff)
+
+        # Y_m(a_eff) + crf(v)*Y_m(v)
+        Ym_a = self._Y_momentum_local(a_eff)
+        Ym_v = self._Y_momentum_local(v_i)
+        crf_v = self._crf(v6)
+
+        return Ym_a + crf_v @ Ym_v
+
+    def _children_list(self) -> list[list[int]]:
+        """Build children lists from Pinocchio parents array."""
+        children = [[] for _ in range(self.rmodel.njoints)]
+        for j in range(1, self.rmodel.njoints):
+            p = self.rmodel.parents[j]
+            if p >= 0:
+                children[p].append(j)
+        return children
+
+    def compute_W1_W2_momentum_recursive(self, q: np.ndarray, dq: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """
+        Compute momentum-based regressors recursively, 
+        using Pinocchio forwardKinematics with ddq = 0 internally.
+
+        W2(q,dq): nv x (10*num_links) such that p = W2 * phi
+        W1(q,dq): nv x (10*num_links) such that dot(p) = tau + W1 * phi
+                (rigid-body drift incl. gravity; friction handled separately)
+        """
+        # 0) Make sure kinematics are updated with ddq=0 (momentum form avoids ddq measurement)
+        ddq0 = np.zeros(self.nv, dtype=np.float64)
+        self.update_fk(q, dq, ddq0)
+
+        Pdim = self.phi_dim * self.num_links
+
+        # 1) Get spatial velocities/accelerations from Pinocchio
+        #    Pinocchio stores in Featherstone order [w; v] for Motion, and rdata.a is spatial acceleration.
+        spatial_vel, spatial_acc = self._compute_spatial_vel_acc()
+
+        # 2) Children adjacency
+        children = self._children_list()
+
+        # 3) Subtree accumulators: 6 x (10*num_links) in each joint frame
+        H_sub = {i: np.zeros((6, Pdim), dtype=np.float64) for i in range(1, self.rmodel.njoints)}
+        D_sub = {i: np.zeros((6, Pdim), dtype=np.float64) for i in range(1, self.rmodel.njoints)}
+
+        # 4) Backward recursion over joints
+        for i in reversed(range(1, self.rmodel.njoints)):
+            col_start = 10 * (i - 1)
+            col_end   = col_start + 10
+
+            # local regressors for this link
+            R_i = self.rdata.oMi[i].rotation.copy()
+
+            Ym_i  = self._Y_momentum_local(spatial_vel[i])                        # 6x10
+            Ydm_i = self._Y_momentum_rate_local(spatial_vel[i], spatial_acc[i], R_i)  # 6x10
+
+            # place local block into full column space
+            H = np.zeros((6, Pdim), dtype=np.float64)
+            D = np.zeros((6, Pdim), dtype=np.float64)
+            H[:, col_start:col_end] = Ym_i
+            D[:, col_start:col_end] = Ydm_i
+
+            # add children contributions transformed into frame i
+            for c in children[i]:
+                # Transform from i to c: ^i X_c (motion transform)
+                X_i_c = self.rdata.oMi[i].inverse() * self.rdata.oMi[c]
+                X_i_c_star = X_i_c.toDualActionMatrix()
+
+                # Apply the same swap wrapping you used in classical propagation
+                H += self._force_swap @ (X_i_c_star @ (self._force_swap @ H_sub[c]))
+                D += self._force_swap @ (X_i_c_star @ (self._force_swap @ D_sub[c]))
+
+            H_sub[i] = H
+            D_sub[i] = D
+
+        # 5) Project subtree quantities to generalized coordinates
+        W2 = np.zeros((self.nv, Pdim), dtype=np.float64)
+        W1 = np.zeros((self.nv, Pdim), dtype=np.float64)
+
+        for i in range(1, self.rmodel.njoints):
+            S_i = self.motion_subspace[i]
+            if S_i.ndim == 1:
+                S_i = S_i.reshape(6, 1)
+
+            proj_W2_i = S_i.T @ H_sub[i]   # (dof_i x Pdim)
+            proj_W1_i = S_i.T @ D_sub[i]
+
+            # Put into correct rows
+            if self.floating_base and i == 1:
+                # free-flyer is 6 rows
+                W2[0:6, :] += proj_W2_i
+                W1[0:6, :] += proj_W1_i
+            else:
+                row_index = (6 + (i - 2)) if self.floating_base else (i - 1)
+                W2[row_index, :] += proj_W2_i.flatten()
+                W1[row_index, :] += proj_W1_i.flatten()
+
+        return W1, W2
     
     # -------------------- API -------------------- #
     def update_fk(self, q: np.ndarray, dq: np.ndarray, ddq: np.ndarray):
