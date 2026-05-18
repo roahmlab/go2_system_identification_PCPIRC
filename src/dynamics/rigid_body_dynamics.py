@@ -695,7 +695,7 @@ class RigidBodyDynamics(ABC):
                 P = np.eye(self.nv)
             if b_v is not None and b_c is not None:
                 tau_prediction = P @ (Y @ phi 
-                                - self.S.T @ (np.diag(b_v) @ dq[self.base_dof:, i] 
+                                + self.S.T @ (np.diag(b_v) @ dq[self.base_dof:, i] 
                                 + np.diag(b_c) @ np.sign(dq[self.base_dof:, i])))
             else: 
                 tau_prediction = P @ (Y @ phi)
