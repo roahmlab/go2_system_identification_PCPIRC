@@ -15,4 +15,8 @@ data
 
 # Setup files #
 ##################
-*.bash
+*.bashmosek.lic
+*.lic
+*.egg-info/
+build/
+dist/

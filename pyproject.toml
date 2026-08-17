@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "go2-sysid"
+version = "0.1.0"
+description = "Physically-consistent inertial parameter identification, Go2 port"
+requires-python = ">=3.10"
+dependencies = []          # deliberately empty -- see note below
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "utils*"]
+namespaces = true
