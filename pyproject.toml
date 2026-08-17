@@ -6,8 +6,22 @@ build-backend = "setuptools.build_meta"
 name = "go2-sysid"
 version = "0.1.0"
 description = "Physically-consistent inertial parameter identification, Go2 port"
-requires-python = ">=3.10"
-dependencies = []          # deliberately empty -- see note below
+requires-python = ">=3.11, <3.12"
+dependencies = [
+      "pin==3.9.0",           # PyPI name for pinocchio; unpinned resolves to 4.1.0 -- see KB §1
+      "cvxpy==1.9.2",
+      "casadi==3.7.2",
+      "mujoco==3.10.0",
+      "numpy>=2.3,<2.4",       # pin==3.9.0's PyPI wheel pulls in cmeel-boost, which caps numpy at <2.4
+      "scipy",
+      "matplotlib",
+      "pyyaml",
+      "urdf-parser-py",       # missing from the authors' env; rigid_body_dynamics.py needs it at import
+  ]
+
+[project.optional-dependencies]
+  mosek = ["mosek==11.2.2"]  # license-gated; CLARABEL (ships with cvxpy) is the license-free default
+  dev = ["pytest"]
 
 [tool.setuptools.packages.find]
 where = ["."]

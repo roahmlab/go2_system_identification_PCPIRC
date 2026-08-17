@@ -24,16 +24,18 @@ Working list of what to build next. Edit freely.
 
 ## 1. Environment
 
-`conda env go2sysid`: pinocchio 3.9.0, cvxpy 1.9.2, casadi 3.7.2, mujoco 3.10.0, numpy 2.4.6, OpenBLAS.
+**`uv`-managed venv** (`pyproject.toml`, Python 3.11) — replaces the earlier `conda env go2sysid`.
+`uv sync` installs: pinocchio 3.9.0 (PyPI package name `pin`), cvxpy 1.9.2, casadi 3.7.2,
+mujoco 3.10.0, numpy 2.4.6 — all ship as prebuilt wheels, no conda-forge needed.
 
-- `pinocchio` pinned to `3.*` on purpose — unpinned gives 4.1.0; authors' code targets 3.7.0.
-- MOSEK license at `~/mosek/mosek.lic`, academic, expires 12-aug-2027. Verified working.
-  **Optional** — CLARABEL solves the same SDP identically. Keep it out of the repo (`.gitignore`
-  doesn't cover `*.lic`).
-- **Missing:** `urdf-parser-py`. `rigid_body_dynamics.py` imports it at module level.
-- Don't use the authors' `environment.yml` — it's a full export from their machine and pins
-  `_x86_64-microarch-level=3=2_skylake`, which fails on this AMD (zen2). Name conflict, not a
-  capability one.
+- `pinocchio` pinned to `3.9.0` on purpose — unpinned gives 4.1.0; authors' code targets 3.7.0.
+- `urdf-parser-py` added to `dependencies` — was missing before; `rigid_body_dynamics.py` imports
+  it at module level.
+- MOSEK is an optional extra (`uv sync --extra mosek`). License still at `~/mosek/mosek.lic`,
+  academic, expires 12-aug-2027, unaffected by the env switch — `.gitignore` covers `*.lic`.
+  **Optional overall** — CLARABEL (ships with cvxpy) solves the same SDP identically.
+- `environment.yml` is now historical only — the authors' full conda export, pins
+  `_x86_64-microarch-level=3=2_skylake` (fails on non-Skylake x86_64), never usable as-is.
 
 ---
 
