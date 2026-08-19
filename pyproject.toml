@@ -9,6 +9,8 @@ description = "Physically-consistent inertial parameter identification, Go2 port
 requires-python = ">=3.11, <3.12"
 dependencies = [
       "pin==3.9.0",           # PyPI name for pinocchio; unpinned resolves to 4.1.0 -- see KB §1
+      "cmeel-urdfdom==4.0.1", # pin==3.9.0's binary is linked against urdfdom's 4.0.x soname; unpinned resolves to 6.0.0, an ABI mismatch (missing liburdfdom_sensor.4.0.dylib)
+      "cmeel-tinyxml2==10.0.0", # urdfdom==4.0.1 is linked against tinyxml2's soname 10; unpinned resolves to 11.0.0, missing libtinyxml2.10.dylib
       "cvxpy==1.9.2",
       "casadi==3.7.2",
       "mujoco==3.10.0",
@@ -17,6 +19,7 @@ dependencies = [
       "matplotlib",
       "pyyaml",
       "urdf-parser-py",       # missing from the authors' env; rigid_body_dynamics.py needs it at import
+      "trimesh",               # missing from the authors' env; rigid_body_dynamics.py needs it at import
   ]
 
 [project.optional-dependencies]

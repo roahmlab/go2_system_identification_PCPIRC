@@ -9,16 +9,30 @@ All numbers measured on this machine unless noted.
 
 Working list of what to build next. Edit freely.
 
+**Resequenced 2026-08-19** — validation-first, exciting trajectories deferred:
+
 | # | item | status | notes |
 |---|---|---|---|
-| 1 | **Update the LMI solver for Go2** | todo | Blocked on the ellipsoid builder — see §4. Needs: `visuals`→`collisions` switch, union over fused children, `rpy` handling. `go2_config.yaml` still to be written (§5) |
-| 2 | **Design exciting trajectories for Go2** | todo | Nothing to port — the authors shipped no trajectory code (§6). Multisine, all 6 channels simultaneous, coprime harmonics. Target the directions §7 shows are invisible |
-| 3 | **Run and validate in simulation** | todo | MuJoCo as the independent plant. G0.3 already passes (§8). Inject a known Δφ into the plant and check the metric recovers it |
+| 1 | **Stage 0/1: Go2 model + validation trajectories + regressor** | todo | `paths.py`/`model.py` for Go2 (`validation_spec.md` §2-3), then non-exciting kinematic trajectories (§7 there: wobble/trot/jump), then per-sample projection (`regressor.py`, §5 there) and a G0.3-style consistency gate. Needs no ellipsoid builder, no SOCP. |
+| 2 | **Ground truth via MuJoCo, not a hand-built SOCP** | todo | Run item 1's trajectories through a MuJoCo tracking controller and log the resulting `(τ, λ)` directly. Replaces `validation_spec.md`'s Stage 2 friction-cone SOCP for now — see rationale below. This *is* "run and validate in simulation," folded in here rather than done as a separate later step. |
+| 3 | **Fix the LMI ellipsoid builder for Go2** | todo | `visuals`→`collisions` switch, union over fused children, `rpy` handling (§4). Only matters once actually running the LMI solve on Go2 data — not a blocker for items 1-2. |
+| 4 | **Design exciting trajectories for Go2** | todo, deferred | The actual research contribution — multisine, all 6 trunk channels simultaneous, coprime harmonics, targeting the directions §7 shows are invisible. Deferred until 1-3 give a working baseline to measure improvement against. |
 
-**Notes carried into these:**
-- (1) and (3) are independent — sim validation of the *metric* doesn't need the LMI working.
-- (2) is the actual research contribution; (1) and (3) are infrastructure for it.
-- The trunk is the worst-identified link in every run so far (§7). That's the thing (2) has to fix.
+**Why λ isn't a problem for identification, but is needed to bootstrap ground truth:**
+Identification itself never touches λ — that's exactly what `P`'s null-space projection buys (§1),
+confirmed by Spot's own data format (§9: contact is binary, no λ file shipped). λ only reappears
+when *fabricating* τ for a hand-designed trajectory nobody actually ran: `M v̇ + n = Sᵀτ + Jcᵀλ`
+has 18 rows but τ only acts on 12 of them (`S` is zero on the floating base); during stance, the
+6 base rows can only be balanced via `Jcᵀλ`. So a physically-consistent τ for an invented
+trajectory requires solving for λ too — that's what Stage 2's SOCP was for. **Decision: use MuJoCo
+instead** — run the trajectory through a sim tracking controller and log the resulting τ directly,
+no hand-derived optimization needed. Stage 2's SOCP becomes optional (useful later for an
+analytical/no-simulator ground truth), not a blocker.
+
+**Notes carried forward:**
+- Items 1-2 and item 3 are independent — sim validation of the *metric* doesn't need LMI working.
+- Item 4 is the actual research contribution; 1-3 are infrastructure for it.
+- The trunk is the worst-identified link in every run so far (§7). That's the thing (4) has to fix.
 
 ---
 
@@ -26,11 +40,26 @@ Working list of what to build next. Edit freely.
 
 **`uv`-managed venv** (`pyproject.toml`, Python 3.11) — replaces the earlier `conda env go2sysid`.
 `uv sync` installs: pinocchio 3.9.0 (PyPI package name `pin`), cvxpy 1.9.2, casadi 3.7.2,
-mujoco 3.10.0, numpy 2.4.6 — all ship as prebuilt wheels, no conda-forge needed.
+mujoco 3.10.0, numpy 2.3.5 (constrained `>=2.3,<2.4`, see below) — all ship as prebuilt wheels, no
+conda-forge needed.
 
 - `pinocchio` pinned to `3.9.0` on purpose — unpinned gives 4.1.0; authors' code targets 3.7.0.
-- `urdf-parser-py` added to `dependencies` — was missing before; `rigid_body_dynamics.py` imports
-  it at module level.
+- `numpy` constrained to `>=2.3,<2.4`, not pinned exact — `pin==3.9.0`'s wheel pulls in
+  `cmeel-boost`, which caps numpy at `<2.4`. Plain `numpy==2.4.6` (conda-forge's validated version)
+  is infeasible via PyPI for this reason.
+- **`pin==3.9.0`'s transitive `cmeel-*` deps must be pinned explicitly on macOS/PyPI** — `pin` itself
+  doesn't constrain their versions, so `uv` resolves them to latest, which breaks ABI compatibility
+  with the prebuilt `pin` binary (dylib `Library not loaded` errors, not missing-file errors — the
+  library exists, just at the wrong soname):
+  - `cmeel-urdfdom==4.0.1` — unpinned resolves to `6.0.0`; `pin`'s binary wants urdfdom's `4.0.x`
+    soname (`liburdfdom_sensor.4.0.dylib` etc).
+  - `cmeel-tinyxml2==10.0.0` — unpinned resolves to `11.0.0`; `urdfdom==4.0.1` in turn is linked
+    against tinyxml2's soname `10` (`libtinyxml2.10.dylib`).
+  - If a further dylib error appears after these two (e.g. `cmeel-console-bridge`, which `urdfdom`
+    also depends on), same fix: check PyPI's version list for the package whose version number
+    matches the missing soname, pin it explicitly.
+- `urdf-parser-py` and `trimesh` added to `dependencies` — both missing from the authors' env;
+  `rigid_body_dynamics.py` imports them at module level.
 - MOSEK is an optional extra (`uv sync --extra mosek`). License still at `~/mosek/mosek.lic`,
   academic, expires 12-aug-2027, unaffected by the env switch — `.gitignore` covers `*.lic`.
   **Optional overall** — CLARABEL (ships with cvxpy) solves the same SDP identically.
@@ -181,7 +210,18 @@ Paper: Solo12 used BiConMP [30] — planned, but as *locomotion*, no observabili
 described only as *"various trajectories"*, no method stated. Related work cites optimal-excitation
 design [16] then doesn't use it.
 
-Measured on the Spot log (105 s): heave 0-15 s, rotation wobble 16-57 s, crawl 60-105 s.
+Measured on the Spot log (105 s total, 10500 samples @ 100 Hz — matches the `.dat` column count):
+
+| motion | window | duration | samples |
+|---|---|---|---|
+| heave | 0–15 s | 15 s | 1500 |
+| *(transition)* | 15–16 s | 1 s | 100 |
+| rotation wobble | 16–57 s | 41 s | 4100 |
+| *(transition)* | 57–60 s | 3 s | 300 |
+| crawl | 60–105 s | 45 s | 4500 |
+
+One continuous log, three motion segments back-to-back — not three separate files. All downstream
+numbers (§7 baseline, §8 gates) run on this single stacked trajectory, not per-segment.
 
 - **`nc` is only ever 4 or 3** — no trot, no flight.
 - Wobble **saturates** at Spot's pose limits; pitch parked within 5% of extreme for **30.5%** of
@@ -272,6 +312,36 @@ limit computed in §6 (`nc` never below 3, quasi-static wobble, stance `wdot` rm
 So large deviations from prior are **expected for Spot** and are not a bug. Go2 differs: its URDF
 carries real per-link inertias, so the same deviation there would mean something.
 
+### Held-out validation — heave+crawl train, wobble held out (2026-08-18)
+
+First run of the held-out check flagged in §10 as untested. Split per §6's segment table:
+train = heave + crawl (6000 samples), held out = rotation wobble (4100 samples). Implemented in
+`demo/run_identification.py` (`split_train_heldout`, `SPOT_SEGMENTS`), guarded to `--robot spot`.
+
+**LMI — generalizes cleanly:**
+
+| | Nominal | Identified |
+|---|---|---|
+| held-out RMSE (rooted) | 17.30 | **8.32** (−52%) |
+
+Total mass held exactly (`33.999999999892985` vs `34.0`) as expected from the hard equality
+constraint. Same trunk-mass-migration pattern as the full-log baseline above: `base_link` mass
++24.4% (16.52 → 20.56 kg). Off-diagonal/near-zero-prior inertias swing hardest in relative terms —
+consistent with the full-log run, not a new failure mode.
+
+**NLS — does not survive the smaller training set:** with the same `lambda_reg=1e-7` as the
+full-log baseline, GN diverges far enough to hit a **float64 overflow** in the cost evaluation
+(`nls_solver.py:224`, `phi @ (self.K @ b)`) before `max_iters=500` completes cleanly.
+`front_right_hip` mass reached 8.40 kg against a 1.68 kg prior (+400%), `I_xz` reached 1.05 kg·m²
+against a 0.002 prior (~500×). Matches §8's diagnosis — no mass/CoM/`J⪰0` constraint and a 1000×
+weaker regularizer than LMI — just pushed over a numerical cliff by less data to pin the fit down.
+A `--lambda_reg` CLI sweep (e.g. matching LMI's `1e-4`) was proposed to test whether stronger
+regularization stabilizes it, but **not pursued — NLS judged too unstable to be a useful comparison
+point without significant rework.**
+
+**Conclusion: confirms the §8/§10 prediction.** Of the two solvers, only LMI is currently usable
+for held-out validation.
+
 ---
 
 ## 8. Defects in the authors' repo
@@ -328,3 +398,15 @@ warning at `:757`.
   rule + GN Hessian at `nls_solver.py:296-356` are the target — since `G,K,H,d,M_link` are constant
   numpy, rebuild the whole cost symbolically in CasADi and compare `ca.gradient` (exact, beats finite
   differences). The **GN Hessian is deliberately approximate** — do *not* test it against `∇²cost`.
+- **Observability spectrum not yet computed** — the decisive diagnostic: SVD of the stacked
+  `W = NᵀY`, projected onto the 13 mass columns. If the legs→trunk direction (the 4.21 kg transfer,
+  §7) sits at the bottom of the spectrum, that confirms it's *unobservable* rather than *measured*,
+  and gives dev item 2 (excitation design) a quantitative target.
+- ~~Held-out validation not yet run~~ — **done, see §7 "Held-out validation."** LMI: held-out RMSE
+  17.30 → 8.32 (−52%), physically plausible. NLS: diverges to float overflow on the smaller
+  training set, judged too unstable to be a useful comparison without a regularization rework.
+  Confirms the prediction that NLS loses.
+- *(hypothesis, unverified)* **Reflected armature** may explain calf inertia inflation: Spot's knee
+  `Iyy` rose +0.0075 kg·m² under LMI, in the plausible armature range, and physical consistency would
+  then drag mass up with it while the mass-equality constraint pushes the deficit onto the thighs —
+  matches the observed sign structure (§7) but is not established.

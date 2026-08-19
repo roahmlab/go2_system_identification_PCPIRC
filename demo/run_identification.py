@@ -40,6 +40,26 @@ def load_data(path, robot_name, filter_type):
 
     return robot_q, robot_dq, robot_ddq, robot_tau, robot_contact
 
+
+# Spot log segment boundaries (samples @ 100 Hz) -- knowledge_base.md §6.
+# Train = heave + crawl; rotation wobble is held out for validation.
+SPOT_SEGMENTS = { ### not verified these visually
+   "heave": (0, 1500),
+   "wobble": (1600, 5700),
+   "crawl": (6000, 10500),
+}
+
+def split_train_heldout(q, dq, ddq, tau, cnt, segments=SPOT_SEGMENTS):
+   def take(arr, lo, hi):
+       return arr[:, lo:hi]
+   def stack(names, arr):
+       return np.hstack([take(arr, *segments[n]) for n in names])
+   train = tuple(stack(["heave", "crawl"], a) for a in (q, dq, ddq, tau, cnt))
+   heldout = tuple(stack(["wobble"], a) for a in (q, dq, ddq, tau, cnt))
+   return train, heldout
+
+
+
 def get_y_tau(q, dq, ddq, torque, cnt, quad_dyn):
     # Compute the regressor matrix Y and the torque vector Tau for each time step and stack them.
     Y = []
@@ -94,7 +114,7 @@ def get_robot_paths(root, robot):
         raise ValueError(f"Unknown robot='{robot}'. Available: {list(robots.keys())}")
     return robots[robot]
 
-def solve_lmi(q, dq, ddq, tau, cnt, quad_dyn):
+def solve_lmi(q, dq, ddq, tau, cnt, quad_dyn, heldout=None):
     total_mass = quad_dyn.get_robot_mass()
     num_of_links = quad_dyn.get_num_links()
     phi_nominal = quad_dyn.get_phi_nominal()
@@ -121,6 +141,13 @@ def solve_lmi(q, dq, ddq, tau, cnt, quad_dyn):
     quad_dyn.print_tau_prediction_rmse(q, dq, ddq, tau, phi_nominal, "Nominal", cnt)
     quad_dyn.print_tau_prediction_rmse(q, dq, ddq, tau, phi_identified, "Identified", cnt, b_v, b_c)
 
+    if heldout is not None:
+        print("Using the heldout dataset for prediction")
+        hq, hdq, hddq, htau, hcnt = heldout
+        quad_dyn.print_tau_prediction_rmse(hq, hdq, hddq, htau, phi_nominal, "Nominal (held-out wobble)", hcnt)
+        quad_dyn.print_tau_prediction_rmse(hq, hdq, hddq, htau, phi_identified, "Identified (held-out wobble)", hcnt, b_v, b_c)
+
+
     plotter = PlotClass(phi_nominal)
     plotter.plot_mass(phi_identified, "Mass Comparison")
     plotter.plot_inertia(phi_identified, "Inertia Comparison")
@@ -128,7 +155,7 @@ def solve_lmi(q, dq, ddq, tau, cnt, quad_dyn):
 
     return phi_identified
 
-def solve_nls(q, dq, ddq, tau, cnt, quad_dyn):
+def solve_nls(q, dq, ddq, tau, cnt, quad_dyn, heldout=None):
     num_of_links = quad_dyn.get_num_links()
     phi_nominal = quad_dyn.get_phi_nominal()
 
@@ -152,6 +179,13 @@ def solve_nls(q, dq, ddq, tau, cnt, quad_dyn):
     quad_dyn.print_inertial_params(phi_nominal, phi_identified)
     quad_dyn.print_tau_prediction_rmse(q, dq, ddq, tau, phi_nominal, "Nominal", cnt)
     quad_dyn.print_tau_prediction_rmse(q, dq, ddq, tau, phi_identified, "Identified", cnt, b_v, b_c)
+
+
+    if heldout is not None:
+       hq, hdq, hddq, htau, hcnt = heldout
+       quad_dyn.print_tau_prediction_rmse(hq, hdq, hddq, htau, phi_nominal, "Nominal (held-out wobble)", hcnt)
+       quad_dyn.print_tau_prediction_rmse(hq, hdq, hddq, htau, phi_identified, "Identified (held-out wobble)", hcnt, b_v, b_c)
+
 
     plotter = PlotClass(phi_nominal)
     plotter.plot_mass(phi_identified, "Mass Comparison")
@@ -186,16 +220,18 @@ def main():
 
     # Step 2: Load and optionally filter data
     q, dq, ddq, tau, cnt = load_data(data_dir, args.robot, args.filter)
-    
+    heldout = None
+    if args.robot == "spot":
+       (q, dq, ddq, tau, cnt), heldout = split_train_heldout(q, dq, ddq, tau, cnt) ## heldout gets populated here
     # Step 3: Build dynamics model of the robot.
     # This is needed to compute the regressor matrix and the friction regressors.
     quad_dyn = QuadrupedDynamics(robot_paths["urdf"], robot_paths["config"], mesh_dir)
 
     # Step 4: Solve for inertial parameters using the selected solver
     if args.solver == "lmi":
-        solve_lmi(q, dq, ddq, tau, cnt, quad_dyn)
+        solve_lmi(q, dq, ddq, tau, cnt, quad_dyn, heldout=heldout)
     elif args.solver == "nls":
-        solve_nls(q, dq, ddq, tau, cnt, quad_dyn)
+        solve_nls(q, dq, ddq, tau, cnt, quad_dyn, heldout=heldout)
     else:
         raise ValueError(f"Unknown solver '{args.solver}'")
 

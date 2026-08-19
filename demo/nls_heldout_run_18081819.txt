@@ -1,0 +1,694 @@
+[GN-exp] it=00 cost=2.263382e+05 step=7.81e-03 damp=3.33e-03 |dtheta|=7.42e+01 b: [1.81e-03,6.19e-03]
+[GN-exp] it=01 cost=2.262613e+05 step=1.95e-03 damp=1.11e-03 |dtheta|=1.22e+02 b: [1.60e-03,7.07e-03]
+[GN-exp] it=02 cost=2.262432e+05 step=4.88e-04 damp=3.70e-04 |dtheta|=2.17e+02 b: [1.54e-03,7.28e-03]
+[GN-exp] it=03 cost=2.261614e+05 step=9.77e-04 damp=1.23e-03 |dtheta|=1.32e+02 b: [1.43e-03,7.71e-03]
+[GN-exp] it=04 cost=2.260431e+05 step=9.77e-04 damp=4.12e-03 |dtheta|=1.07e+02 b: [1.36e-03,8.12e-03]
+[GN-exp] it=05 cost=2.260243e+05 step=9.77e-04 damp=1.37e-03 |dtheta|=1.36e+02 b: [1.27e-03,8.55e-03]
+[GN-exp] it=06 cost=2.259347e+05 step=9.77e-04 damp=4.57e-03 |dtheta|=1.07e+02 b: [1.21e-03,8.96e-03]
+[GN-exp] it=07 cost=2.258813e+05 step=4.88e-04 damp=1.52e-03 |dtheta|=1.37e+02 b: [1.17e-03,9.17e-03]
+[GN-exp] it=08 cost=2.258071e+05 step=9.77e-04 damp=5.08e-03 |dtheta|=1.04e+02 b: [1.12e-03,9.59e-03]
+[GN-exp] it=09 cost=2.257625e+05 step=4.88e-04 damp=1.69e-03 |dtheta|=1.34e+02 b: [1.08e-03,9.80e-03]
+[GN-exp] it=10 cost=2.257009e+05 step=9.77e-04 damp=5.65e-03 |dtheta|=1.01e+02 b: [1.03e-03,1.02e-02]
+[GN-exp] it=11 cost=2.256636e+05 step=4.88e-04 damp=1.88e-03 |dtheta|=1.30e+02 b: [9.96e-04,1.04e-02]
+[GN-exp] it=12 cost=2.256110e+05 step=9.77e-04 damp=6.27e-03 |dtheta|=9.74e+01 b: [9.61e-04,1.08e-02]
+[GN-exp] it=13 cost=2.255791e+05 step=4.88e-04 damp=2.09e-03 |dtheta|=1.25e+02 b: [9.28e-04,1.10e-02]
+[GN-exp] it=14 cost=2.255290e+05 step=9.77e-04 damp=6.97e-03 |dtheta|=9.38e+01 b: [8.98e-04,1.15e-02]
+[GN-exp] it=15 cost=2.254981e+05 step=4.88e-04 damp=2.32e-03 |dtheta|=1.21e+02 b: [8.69e-04,1.17e-02]
+[GN-exp] it=16 cost=2.254414e+05 step=9.77e-04 damp=7.74e-03 |dtheta|=9.01e+01 b: [8.44e-04,1.21e-02]
+[GN-exp] it=17 cost=2.254062e+05 step=4.88e-04 damp=2.58e-03 |dtheta|=1.16e+02 b: [8.19e-04,1.23e-02]
+[GN-exp] it=18 cost=2.253353e+05 step=9.77e-04 damp=8.60e-03 |dtheta|=8.63e+01 b: [7.98e-04,1.27e-02]
+[GN-exp] it=19 cost=2.252921e+05 step=4.88e-04 damp=2.87e-03 |dtheta|=1.11e+02 b: [7.76e-04,1.29e-02]
+[GN-exp] it=20 cost=2.252043e+05 step=9.77e-04 damp=9.56e-03 |dtheta|=8.26e+01 b: [7.58e-04,1.33e-02]
+[GN-exp] it=21 cost=2.251521e+05 step=4.88e-04 damp=3.19e-03 |dtheta|=1.06e+02 b: [7.39e-04,1.35e-02]
+[GN-exp] it=22 cost=2.250479e+05 step=9.77e-04 damp=1.06e-02 |dtheta|=7.90e+01 b: [7.24e-04,1.40e-02]
+[GN-exp] it=23 cost=2.249870e+05 step=4.88e-04 damp=3.54e-03 |dtheta|=1.01e+02 b: [7.07e-04,1.42e-02]
+[GN-exp] it=24 cost=2.248681e+05 step=9.77e-04 damp=1.18e-02 |dtheta|=7.56e+01 b: [6.95e-04,1.46e-02]
+[GN-exp] it=25 cost=2.248513e+05 step=9.77e-04 damp=3.93e-03 |dtheta|=9.69e+01 b: [6.65e-04,1.50e-02]
+[GN-exp] it=26 cost=2.248412e+05 step=4.88e-04 damp=1.31e-03 |dtheta|=1.36e+02 b: [6.36e-04,1.52e-02]
+[GN-exp] it=27 cost=2.247915e+05 step=9.77e-04 damp=4.37e-03 |dtheta|=9.18e+01 b: [6.13e-04,1.56e-02]
+[GN-exp] it=28 cost=2.247675e+05 step=4.88e-04 damp=1.46e-03 |dtheta|=1.29e+02 b: [5.88e-04,1.58e-02]
+[GN-exp] it=29 cost=2.246902e+05 step=9.77e-04 damp=4.86e-03 |dtheta|=8.70e+01 b: [5.69e-04,1.63e-02]
+[GN-exp] it=30 cost=2.246541e+05 step=4.88e-04 damp=1.62e-03 |dtheta|=1.23e+02 b: [5.48e-04,1.65e-02]
+[GN-exp] it=31 cost=2.245535e+05 step=9.77e-04 damp=5.40e-03 |dtheta|=8.26e+01 b: [5.32e-04,1.69e-02]
+[GN-exp] it=32 cost=2.245068e+05 step=4.88e-04 damp=1.80e-03 |dtheta|=1.17e+02 b: [5.14e-04,1.71e-02]
+[GN-exp] it=33 cost=2.243864e+05 step=9.77e-04 damp=6.00e-03 |dtheta|=7.86e+01 b: [5.02e-04,1.75e-02]
+[GN-exp] it=34 cost=2.243303e+05 step=4.88e-04 damp=2.00e-03 |dtheta|=1.11e+02 b: [4.87e-04,1.77e-02]
+[GN-exp] it=35 cost=2.242922e+05 step=1.95e-03 damp=6.66e-03 |dtheta|=7.48e+01 b: [4.66e-04,1.86e-02]
+[GN-exp] it=36 cost=2.242831e+05 step=9.77e-04 damp=2.22e-03 |dtheta|=1.05e+02 b: [4.41e-04,1.90e-02]
+[GN-exp] it=37 cost=2.241565e+05 step=1.95e-03 damp=7.40e-03 |dtheta|=7.00e+01 b: [4.25e-04,1.98e-02]
+[GN-exp] it=38 cost=2.241080e+05 step=9.77e-04 damp=2.47e-03 |dtheta|=9.84e+01 b: [4.06e-04,2.03e-02]
+[GN-exp] it=39 cost=2.239099e+05 step=1.95e-03 damp=8.23e-03 |dtheta|=6.58e+01 b: [3.94e-04,2.11e-02]
+[GN-exp] it=40 cost=2.238276e+05 step=9.77e-04 damp=2.74e-03 |dtheta|=9.28e+01 b: [3.78e-04,2.15e-02]
+[GN-exp] it=41 cost=2.238170e+05 step=4.88e-04 damp=9.14e-04 |dtheta|=1.58e+02 b: [3.60e-04,2.17e-02]
+[GN-exp] it=42 cost=2.237062e+05 step=9.77e-04 damp=3.05e-03 |dtheta|=8.71e+01 b: [3.48e-04,2.21e-02]
+[GN-exp] it=43 cost=2.236821e+05 step=4.88e-04 damp=1.02e-03 |dtheta|=1.48e+02 b: [3.33e-04,2.23e-02]
+[GN-exp] it=44 cost=2.236478e+05 step=1.95e-03 damp=3.38e-03 |dtheta|=8.19e+01 b: [3.14e-04,2.32e-02]
+[GN-exp] it=45 cost=2.236089e+05 step=4.88e-04 damp=1.13e-03 |dtheta|=1.39e+02 b: [3.03e-04,2.34e-02]
+[GN-exp] it=46 cost=2.234700e+05 step=1.95e-03 damp=3.76e-03 |dtheta|=7.66e+01 b: [2.88e-04,2.42e-02]
+[GN-exp] it=47 cost=2.234171e+05 step=4.88e-04 damp=1.25e-03 |dtheta|=1.31e+02 b: [2.79e-04,2.44e-02]
+[GN-exp] it=48 cost=2.231960e+05 step=1.95e-03 damp=4.18e-03 |dtheta|=7.19e+01 b: [2.68e-04,2.53e-02]
+[GN-exp] it=49 cost=2.231885e+05 step=9.77e-04 damp=1.39e-03 |dtheta|=1.23e+02 b: [2.53e-04,2.57e-02]
+[GN-exp] it=50 cost=2.230177e+05 step=3.91e-03 damp=4.64e-03 |dtheta|=6.73e+01 b: [2.37e-04,2.74e-02]
+[GN-exp] it=51 cost=2.229518e+05 step=9.77e-04 damp=1.55e-03 |dtheta|=1.15e+02 b: [2.26e-04,2.78e-02]
+[GN-exp] it=52 cost=2.225211e+05 step=3.91e-03 damp=5.16e-03 |dtheta|=6.27e+01 b: [2.14e-04,2.95e-02]
+[GN-exp] it=53 cost=2.224087e+05 step=9.77e-04 damp=1.72e-03 |dtheta|=1.08e+02 b: [2.06e-04,2.99e-02]
+[GN-exp] it=54 cost=2.220365e+05 step=7.81e-03 damp=5.73e-03 |dtheta|=5.88e+01 b: [1.88e-04,3.33e-02]
+[GN-exp] it=55 cost=2.219320e+05 step=1.95e-03 damp=1.91e-03 |dtheta|=1.03e+02 b: [1.77e-04,3.41e-02]
+[GN-exp] it=56 cost=2.219073e+05 step=4.88e-04 damp=6.37e-04 |dtheta|=2.06e+02 b: [1.70e-04,3.43e-02]
+[GN-exp] it=57 cost=2.218704e+05 step=3.91e-03 damp=2.12e-03 |dtheta|=9.11e+01 b: [1.53e-04,3.60e-02]
+[GN-exp] it=58 cost=2.218133e+05 step=4.88e-04 damp=7.08e-04 |dtheta|=1.84e+02 b: [1.48e-04,3.62e-02]
+[GN-exp] it=59 cost=2.213231e+05 step=3.91e-03 damp=2.36e-03 |dtheta|=7.92e+01 b: [1.37e-04,3.78e-02]
+[GN-exp] it=60 cost=2.212583e+05 step=9.77e-04 damp=7.86e-04 |dtheta|=1.64e+02 b: [1.30e-04,3.82e-02]
+[GN-exp] it=61 cost=2.204509e+05 step=7.81e-03 damp=2.62e-03 |dtheta|=6.91e+01 b: [1.14e-04,4.16e-02]
+[GN-exp] it=62 cost=2.203822e+05 step=1.95e-03 damp=8.74e-04 |dtheta|=1.42e+02 b: [1.05e-04,4.24e-02]
+[GN-exp] it=63 cost=2.203704e+05 step=4.88e-04 damp=2.91e-04 |dtheta|=2.93e+02 b: [9.98e-05,4.26e-02]
+[GN-exp] it=64 cost=2.202685e+05 step=3.91e-03 damp=9.71e-04 |dtheta|=1.16e+02 b: [8.75e-05,4.42e-02]
+[GN-exp] it=65 cost=2.202469e+05 step=9.77e-04 damp=3.24e-04 |dtheta|=2.44e+02 b: [8.06e-05,4.46e-02]
+[GN-exp] it=66 cost=2.197963e+05 step=3.91e-03 damp=1.08e-03 |dtheta|=9.00e+01 b: [7.32e-05,4.61e-02]
+[GN-exp] it=67 cost=2.197886e+05 step=1.95e-03 damp=3.60e-04 |dtheta|=2.03e+02 b: [6.44e-05,4.69e-02]
+[GN-exp] it=68 cost=2.166365e+05 step=1.56e-02 damp=1.20e-04 |dtheta|=4.32e+02 b: [4.90e-06,5.36e-02]
+[GN-exp] it=69 cost=2.165851e+05 step=4.88e-04 damp=3.99e-04 |dtheta|=1.14e+02 b: [4.89e-06,5.38e-02]
+[GN-exp] it=70 cost=2.165681e+05 step=1.95e-03 damp=1.33e-03 |dtheta|=6.30e+01 b: [4.88e-06,5.45e-02]
+[GN-exp] it=71 cost=2.165241e+05 step=4.88e-04 damp=4.44e-04 |dtheta|=1.06e+02 b: [4.87e-06,5.47e-02]
+[GN-exp] it=72 cost=2.164104e+05 step=9.77e-04 damp=1.48e-03 |dtheta|=5.97e+01 b: [4.86e-06,5.51e-02]
+[GN-exp] it=73 cost=2.163665e+05 step=4.88e-04 damp=4.93e-04 |dtheta|=9.96e+01 b: [4.85e-06,5.53e-02]
+[GN-exp] it=74 cost=2.162505e+05 step=9.77e-04 damp=1.64e-03 |dtheta|=5.72e+01 b: [4.85e-06,5.57e-02]
+[GN-exp] it=75 cost=2.162040e+05 step=4.88e-04 damp=5.48e-04 |dtheta|=9.36e+01 b: [4.84e-06,5.59e-02]
+[GN-exp] it=76 cost=2.161906e+05 step=1.95e-03 damp=1.83e-03 |dtheta|=5.53e+01 b: [4.83e-06,5.67e-02]
+[GN-exp] it=77 cost=2.161393e+05 step=4.88e-04 damp=6.09e-04 |dtheta|=8.83e+01 b: [4.83e-06,5.68e-02]
+[GN-exp] it=78 cost=2.160899e+05 step=1.95e-03 damp=2.03e-03 |dtheta|=5.43e+01 b: [4.82e-06,5.76e-02]
+[GN-exp] it=79 cost=2.160313e+05 step=4.88e-04 damp=6.77e-04 |dtheta|=8.41e+01 b: [4.82e-06,5.78e-02]
+[GN-exp] it=80 cost=2.159383e+05 step=1.95e-03 damp=2.26e-03 |dtheta|=5.43e+01 b: [4.81e-06,5.86e-02]
+[GN-exp] it=81 cost=2.159123e+05 step=9.77e-04 damp=7.52e-04 |dtheta|=8.10e+01 b: [4.80e-06,5.89e-02]
+[GN-exp] it=82 cost=2.157661e+05 step=1.95e-03 damp=2.51e-03 |dtheta|=5.48e+01 b: [4.79e-06,5.97e-02]
+[GN-exp] it=83 cost=2.157100e+05 step=9.77e-04 damp=8.35e-04 |dtheta|=7.87e+01 b: [4.78e-06,6.01e-02]
+[GN-exp] it=84 cost=2.155117e+05 step=1.95e-03 damp=2.78e-03 |dtheta|=5.54e+01 b: [4.78e-06,6.08e-02]
+[GN-exp] it=85 cost=2.154298e+05 step=9.77e-04 damp=9.28e-04 |dtheta|=7.65e+01 b: [4.77e-06,6.12e-02]
+[GN-exp] it=86 cost=2.154225e+05 step=4.88e-04 damp=3.09e-04 |dtheta|=1.29e+02 b: [4.76e-06,6.14e-02]
+[GN-exp] it=87 cost=2.153109e+05 step=9.77e-04 damp=1.03e-03 |dtheta|=7.27e+01 b: [4.75e-06,6.18e-02]
+[GN-exp] it=88 cost=2.152814e+05 step=4.88e-04 damp=3.44e-04 |dtheta|=1.18e+02 b: [4.74e-06,6.20e-02]
+[GN-exp] it=89 cost=2.152178e+05 step=1.95e-03 damp=1.15e-03 |dtheta|=6.96e+01 b: [4.73e-06,6.27e-02]
+[GN-exp] it=90 cost=2.151695e+05 step=4.88e-04 damp=3.82e-04 |dtheta|=1.09e+02 b: [4.72e-06,6.29e-02]
+[GN-exp] it=91 cost=2.150119e+05 step=1.95e-03 damp=1.27e-03 |dtheta|=6.65e+01 b: [4.71e-06,6.37e-02]
+[GN-exp] it=92 cost=2.149999e+05 step=9.77e-04 damp=4.24e-04 |dtheta|=1.01e+02 b: [4.69e-06,6.40e-02]
+[GN-exp] it=93 cost=2.149592e+05 step=3.91e-03 damp=1.41e-03 |dtheta|=6.30e+01 b: [4.67e-06,6.55e-02]
+[GN-exp] it=94 cost=2.148907e+05 step=9.77e-04 damp=4.71e-04 |dtheta|=9.25e+01 b: [4.65e-06,6.59e-02]
+[GN-exp] it=95 cost=2.145131e+05 step=3.91e-03 damp=1.57e-03 |dtheta|=5.87e+01 b: [4.64e-06,6.74e-02]
+[GN-exp] it=96 cost=2.144118e+05 step=9.77e-04 damp=5.24e-04 |dtheta|=8.64e+01 b: [4.62e-06,6.78e-02]
+[GN-exp] it=97 cost=2.140961e+05 step=7.81e-03 damp=1.75e-03 |dtheta|=5.64e+01 b: [4.59e-06,7.08e-02]
+[GN-exp] it=98 cost=2.140663e+05 step=1.95e-03 damp=5.82e-03 |dtheta|=7.11e+01 b: [4.59e-06,7.15e-02]
+[GN-exp] it=99 cost=2.138707e+05 step=1.95e-03 damp=1.94e-03 |dtheta|=8.13e+01 b: [4.58e-06,7.23e-02]
+[GN-exp] it=100 cost=2.137615e+05 step=1.95e-03 damp=6.47e-03 |dtheta|=7.07e+01 b: [4.58e-06,7.30e-02]
+[GN-exp] it=101 cost=2.137007e+05 step=9.77e-04 damp=2.16e-03 |dtheta|=1.14e+02 b: [4.58e-06,7.34e-02]
+[GN-exp] it=102 cost=2.133117e+05 step=3.91e-03 damp=7.19e-03 |dtheta|=5.83e+01 b: [4.57e-06,7.48e-02]
+[GN-exp] it=103 cost=2.131998e+05 step=9.77e-04 damp=2.40e-03 |dtheta|=1.02e+02 b: [4.57e-06,7.52e-02]
+[GN-exp] it=104 cost=2.125080e+05 step=7.81e-03 damp=7.98e-03 |dtheta|=5.07e+01 b: [4.56e-06,7.81e-02]
+[GN-exp] it=105 cost=2.122356e+05 step=3.91e-03 damp=2.66e-03 |dtheta|=8.90e+01 b: [4.55e-06,7.95e-02]
+[GN-exp] it=106 cost=2.117596e+05 step=3.12e-02 damp=8.87e-03 |dtheta|=4.55e+01 b: [4.53e-06,9.17e-02]
+[GN-exp] it=107 cost=2.117097e+05 step=4.88e-04 damp=2.96e-03 |dtheta|=1.06e+02 b: [4.53e-06,9.19e-02]
+[GN-exp] it=108 cost=2.116072e+05 step=1.95e-03 damp=9.86e-03 |dtheta|=6.46e+01 b: [4.53e-06,9.26e-02]
+[GN-exp] it=109 cost=2.115817e+05 step=4.88e-04 damp=3.29e-03 |dtheta|=1.13e+02 b: [4.52e-06,9.28e-02]
+[GN-exp] it=110 cost=2.114684e+05 step=1.95e-03 damp=1.10e-02 |dtheta|=5.44e+01 b: [4.52e-06,9.34e-02]
+[GN-exp] it=111 cost=2.114654e+05 step=9.77e-04 damp=3.65e-03 |dtheta|=9.47e+01 b: [4.52e-06,9.38e-02]
+[GN-exp] it=112 cost=2.114509e+05 step=4.88e-04 damp=1.22e-03 |dtheta|=1.69e+02 b: [4.52e-06,9.40e-02]
+[GN-exp] it=113 cost=2.114134e+05 step=4.88e-04 damp=4.06e-04 |dtheta|=3.05e+02 b: [4.51e-06,9.41e-02]
+[GN-exp] it=114 cost=1.605487e+05 step=1.56e-02 damp=1.35e-04 |dtheta|=5.30e+02 b: [3.79e-06,9.97e-02]
+[GN-exp] it=115 cost=1.605107e+05 step=9.77e-04 damp=4.51e-04 |dtheta|=2.62e+02 b: [3.78e-06,1.00e-01]
+[GN-exp] it=116 cost=1.605067e+05 step=4.88e-04 damp=1.50e-04 |dtheta|=4.45e+02 b: [3.76e-06,1.00e-01]
+[GN-exp] it=117 cost=1.604954e+05 step=9.77e-04 damp=5.01e-04 |dtheta|=2.26e+02 b: [3.76e-06,1.01e-01]
+[GN-exp] it=118 cost=1.604645e+05 step=1.95e-03 damp=1.67e-03 |dtheta|=1.03e+02 b: [3.75e-06,1.01e-01]
+[GN-exp] it=119 cost=1.604644e+05 step=9.77e-04 damp=5.56e-04 |dtheta|=1.94e+02 b: [3.74e-06,1.02e-01]
+[GN-exp] it=120 cost=1.604017e+05 step=1.95e-03 damp=1.85e-03 |dtheta|=9.00e+01 b: [3.74e-06,1.02e-01]
+[GN-exp] it=121 cost=1.603861e+05 step=9.77e-04 damp=6.18e-04 |dtheta|=1.70e+02 b: [3.73e-06,1.03e-01]
+[GN-exp] it=122 cost=1.602761e+05 step=1.95e-03 damp=2.06e-03 |dtheta|=8.04e+01 b: [3.72e-06,1.03e-01]
+[GN-exp] it=123 cost=1.602392e+05 step=9.77e-04 damp=6.87e-04 |dtheta|=1.51e+02 b: [3.72e-06,1.04e-01]
+[GN-exp] it=124 cost=1.602296e+05 step=4.88e-04 damp=2.29e-04 |dtheta|=2.78e+02 b: [3.71e-06,1.04e-01]
+[GN-exp] it=125 cost=1.601689e+05 step=9.77e-04 damp=7.63e-04 |dtheta|=1.31e+02 b: [3.70e-06,1.04e-01]
+[GN-exp] it=126 cost=1.601449e+05 step=4.88e-04 damp=2.54e-04 |dtheta|=2.42e+02 b: [3.69e-06,1.04e-01]
+[GN-exp] it=127 cost=1.600971e+05 step=1.95e-03 damp=8.48e-04 |dtheta|=1.18e+02 b: [3.68e-06,1.05e-01]
+[GN-exp] it=128 cost=1.600902e+05 step=9.77e-04 damp=2.83e-04 |dtheta|=2.19e+02 b: [3.67e-06,1.05e-01]
+[GN-exp] it=129 cost=1.600872e+05 step=4.88e-04 damp=9.42e-05 |dtheta|=4.09e+02 b: [3.64e-06,1.05e-01]
+[GN-exp] it=130 cost=1.600285e+05 step=9.77e-04 damp=3.14e-04 |dtheta|=1.85e+02 b: [3.63e-06,1.06e-01]
+[GN-exp] it=131 cost=1.600087e+05 step=4.88e-04 damp=1.05e-04 |dtheta|=3.49e+02 b: [3.61e-06,1.06e-01]
+[GN-exp] it=132 cost=1.599395e+05 step=1.95e-03 damp=3.49e-04 |dtheta|=1.65e+02 b: [3.59e-06,1.07e-01]
+[GN-exp] it=133 cost=1.599346e+05 step=9.77e-04 damp=1.16e-04 |dtheta|=3.38e+02 b: [3.55e-06,1.07e-01]
+[GN-exp] it=134 cost=1.598432e+05 step=1.95e-03 damp=3.88e-04 |dtheta|=1.66e+02 b: [3.53e-06,1.08e-01]
+[GN-exp] it=135 cost=1.598207e+05 step=9.77e-04 damp=1.29e-04 |dtheta|=4.03e+02 b: [3.50e-06,1.08e-01]
+[GN-exp] it=136 cost=1.597661e+05 step=1.95e-03 damp=4.31e-04 |dtheta|=1.89e+02 b: [3.48e-06,1.09e-01]
+[GN-exp] it=137 cost=1.597483e+05 step=9.77e-04 damp=1.44e-04 |dtheta|=4.19e+02 b: [3.45e-06,1.09e-01]
+[GN-exp] it=138 cost=1.596445e+05 step=1.95e-03 damp=4.79e-04 |dtheta|=1.73e+02 b: [3.44e-06,1.09e-01]
+[GN-exp] it=139 cost=1.596035e+05 step=9.77e-04 damp=1.60e-04 |dtheta|=3.82e+02 b: [3.41e-06,1.10e-01]
+[GN-exp] it=140 cost=1.594866e+05 step=1.95e-03 damp=5.32e-04 |dtheta|=1.63e+02 b: [3.40e-06,1.10e-01]
+[GN-exp] it=141 cost=1.594224e+05 step=9.77e-04 damp=1.77e-04 |dtheta|=3.47e+02 b: [3.38e-06,1.11e-01]
+[GN-exp] it=142 cost=1.594019e+05 step=3.91e-03 damp=5.91e-04 |dtheta|=1.50e+02 b: [3.35e-06,1.12e-01]
+[GN-exp] it=143 cost=1.593743e+05 step=4.88e-04 damp=1.97e-04 |dtheta|=4.58e+02 b: [3.34e-06,1.12e-01]
+[GN-exp] it=144 cost=1.592885e+05 step=3.91e-03 damp=6.57e-04 |dtheta|=1.59e+02 b: [3.32e-06,1.14e-01]
+[GN-exp] it=145 cost=1.591903e+05 step=3.91e-03 damp=2.19e-03 |dtheta|=1.00e+02 b: [3.31e-06,1.15e-01]
+[GN-exp] it=146 cost=1.589486e+05 step=7.81e-03 damp=7.30e-04 |dtheta|=1.41e+02 b: [3.27e-06,1.17e-01]
+[GN-exp] it=147 cost=1.589011e+05 step=9.77e-04 damp=2.43e-03 |dtheta|=1.45e+02 b: [3.27e-06,1.18e-01]
+[GN-exp] it=148 cost=1.588861e+05 step=4.88e-04 damp=8.11e-04 |dtheta|=2.57e+02 b: [3.27e-06,1.18e-01]
+[GN-exp] it=149 cost=1.587223e+05 step=3.91e-03 damp=2.70e-03 |dtheta|=9.10e+01 b: [3.27e-06,1.19e-01]
+[GN-exp] it=150 cost=1.585292e+05 step=7.81e-03 damp=9.01e-04 |dtheta|=1.42e+02 b: [3.24e-06,1.22e-01]
+[GN-exp] it=151 cost=1.584987e+05 step=4.88e-04 damp=3.00e-03 |dtheta|=1.15e+02 b: [3.23e-06,1.22e-01]
+[GN-exp] it=152 cost=1.583837e+05 step=1.95e-03 damp=1.00e-02 |dtheta|=5.92e+01 b: [3.23e-06,1.23e-01]
+[GN-exp] it=153 cost=1.583247e+05 step=9.77e-04 damp=3.34e-03 |dtheta|=1.02e+02 b: [3.23e-06,1.23e-01]
+[GN-exp] it=154 cost=1.583226e+05 step=1.95e-03 damp=1.11e-03 |dtheta|=1.72e+02 b: [3.23e-06,1.23e-01]
+[GN-exp] it=155 cost=1.583070e+05 step=1.95e-03 damp=3.71e-04 |dtheta|=3.63e+02 b: [3.21e-06,1.24e-01]
+[GN-exp] it=156 cost=1.582810e+05 step=4.88e-04 damp=1.24e-03 |dtheta|=2.03e+02 b: [3.21e-06,1.24e-01]
+[GN-exp] it=157 cost=1.582564e+05 step=9.77e-04 damp=4.12e-04 |dtheta|=3.46e+02 b: [3.20e-06,1.25e-01]
+[GN-exp] it=158 cost=1.582394e+05 step=4.88e-04 damp=1.37e-04 |dtheta|=6.47e+02 b: [3.19e-06,1.25e-01]
+[GN-exp] it=159 cost=1.581879e+05 step=9.77e-04 damp=4.58e-04 |dtheta|=2.11e+02 b: [3.18e-06,1.25e-01]
+[GN-exp] it=160 cost=1.581855e+05 step=9.77e-04 damp=1.53e-04 |dtheta|=5.77e+02 b: [3.16e-06,1.25e-01]
+[GN-exp] it=161 cost=1.581318e+05 step=9.77e-04 damp=5.09e-04 |dtheta|=3.06e+02 b: [3.15e-06,1.26e-01]
+[GN-exp] it=162 cost=1.581310e+05 step=9.77e-04 damp=1.70e-04 |dtheta|=5.75e+02 b: [3.13e-06,1.26e-01]
+[GN-exp] it=163 cost=1.581186e+05 step=4.88e-04 damp=5.65e-04 |dtheta|=3.10e+02 b: [3.13e-06,1.26e-01]
+[GN-exp] it=164 cost=1.581151e+05 step=4.88e-04 damp=1.88e-04 |dtheta|=4.31e+02 b: [3.12e-06,1.26e-01]
+[GN-exp] it=165 cost=1.581051e+05 step=3.91e-03 damp=6.28e-04 |dtheta|=1.39e+02 b: [3.10e-06,1.28e-01]
+[GN-exp] it=166 cost=1.580004e+05 step=7.81e-03 damp=2.09e-03 |dtheta|=9.23e+01 b: [3.09e-06,1.30e-01]
+[GN-exp] it=167 cost=1.579826e+05 step=9.77e-04 damp=6.98e-04 |dtheta|=2.69e+02 b: [3.09e-06,1.30e-01]
+[GN-exp] it=168 cost=1.579551e+05 step=4.88e-04 damp=2.33e-04 |dtheta|=5.08e+02 b: [3.08e-06,1.30e-01]
+[GN-exp] it=169 cost=1.579333e+05 step=9.77e-04 damp=7.75e-05 |dtheta|=7.47e+02 b: [3.04e-06,1.31e-01]
+[GN-exp] it=170 cost=1.579199e+05 step=4.88e-04 damp=2.58e-04 |dtheta|=4.49e+02 b: [3.03e-06,1.31e-01]
+[GN-exp] it=171 cost=1.579179e+05 step=4.88e-04 damp=8.61e-05 |dtheta|=8.11e+02 b: [3.02e-06,1.31e-01]
+[GN-exp] it=172 cost=1.578886e+05 step=9.77e-04 damp=2.87e-03 |dtheta|=1.11e+02 b: [3.01e-06,1.31e-01]
+[GN-exp] it=173 cost=1.575214e+05 step=1.56e-02 damp=9.57e-04 |dtheta|=1.18e+02 b: [2.97e-06,1.36e-01]
+[GN-exp] it=174 cost=1.575122e+05 step=4.88e-04 damp=3.19e-04 |dtheta|=3.70e+02 b: [2.96e-06,1.36e-01]
+[GN-exp] it=175 cost=1.574618e+05 step=1.95e-03 damp=1.06e-03 |dtheta|=2.17e+02 b: [2.96e-06,1.37e-01]
+[GN-exp] it=176 cost=1.574441e+05 step=4.88e-04 damp=3.54e-04 |dtheta|=3.77e+02 b: [2.95e-06,1.37e-01]
+[GN-exp] it=177 cost=1.573339e+05 step=1.95e-03 damp=1.18e-03 |dtheta|=2.07e+02 b: [2.95e-06,1.38e-01]
+[GN-exp] it=178 cost=1.573133e+05 step=4.88e-04 damp=3.94e-04 |dtheta|=3.84e+02 b: [2.94e-06,1.38e-01]
+[GN-exp] it=179 cost=1.571859e+05 step=3.91e-03 damp=1.31e-03 |dtheta|=1.68e+02 b: [2.93e-06,1.39e-01]
+[GN-exp] it=180 cost=1.571634e+05 step=4.88e-04 damp=4.38e-04 |dtheta|=2.76e+02 b: [2.93e-06,1.39e-01]
+[GN-exp] it=181 cost=1.569866e+05 step=3.91e-03 damp=1.46e-03 |dtheta|=9.52e+01 b: [2.92e-06,1.40e-01]
+[GN-exp] it=182 cost=1.569584e+05 step=9.77e-04 damp=4.86e-04 |dtheta|=2.61e+02 b: [2.92e-06,1.41e-01]
+[GN-exp] it=183 cost=1.550417e+05 step=7.81e-03 damp=1.62e-04 |dtheta|=4.32e+02 b: [2.79e-06,1.43e-01]
+[GN-exp] it=184 cost=1.550007e+05 step=9.77e-04 damp=5.40e-03 |dtheta|=8.68e+01 b: [2.78e-06,1.43e-01]
+[GN-exp] it=185 cost=1.549943e+05 step=4.88e-04 damp=1.80e-03 |dtheta|=1.54e+02 b: [2.78e-06,1.44e-01]
+[GN-exp] it=186 cost=1.549435e+05 step=9.77e-04 damp=6.00e-03 |dtheta|=8.16e+01 b: [2.78e-06,1.44e-01]
+[GN-exp] it=187 cost=1.549335e+05 step=4.88e-04 damp=2.00e-03 |dtheta|=1.50e+02 b: [2.78e-06,1.44e-01]
+[GN-exp] it=188 cost=1.549132e+05 step=1.95e-03 damp=6.67e-03 |dtheta|=7.45e+01 b: [2.78e-06,1.45e-01]
+[GN-exp] it=189 cost=1.548953e+05 step=4.88e-04 damp=2.22e-03 |dtheta|=1.40e+02 b: [2.78e-06,1.45e-01]
+[GN-exp] it=190 cost=1.547906e+05 step=1.95e-03 damp=7.41e-03 |dtheta|=6.22e+01 b: [2.78e-06,1.45e-01]
+[GN-exp] it=191 cost=1.547841e+05 step=9.77e-04 damp=2.47e-03 |dtheta|=1.19e+02 b: [2.78e-06,1.46e-01]
+[GN-exp] it=192 cost=1.547547e+05 step=7.81e-03 damp=8.23e-03 |dtheta|=4.72e+01 b: [2.78e-06,1.48e-01]
+[GN-exp] it=193 cost=1.546684e+05 step=3.91e-03 damp=2.74e-03 |dtheta|=7.65e+01 b: [2.77e-06,1.49e-01]
+[GN-exp] it=194 cost=1.546198e+05 step=9.77e-04 damp=9.15e-04 |dtheta|=1.67e+02 b: [2.77e-06,1.49e-01]
+[GN-exp] it=195 cost=1.541643e+05 step=1.56e-02 damp=3.05e-03 |dtheta|=5.75e+01 b: [2.76e-06,1.54e-01]
+[GN-exp] it=196 cost=1.541450e+05 step=1.95e-03 damp=1.02e-03 |dtheta|=2.02e+02 b: [2.75e-06,1.55e-01]
+[GN-exp] it=197 cost=1.541344e+05 step=9.77e-04 damp=3.39e-04 |dtheta|=3.38e+02 b: [2.75e-06,1.55e-01]
+[GN-exp] it=198 cost=1.540948e+05 step=1.95e-03 damp=1.13e-03 |dtheta|=1.77e+02 b: [2.74e-06,1.56e-01]
+[GN-exp] it=199 cost=1.540646e+05 step=4.88e-04 damp=3.76e-04 |dtheta|=3.11e+02 b: [2.74e-06,1.56e-01]
+[GN-exp] it=200 cost=1.440709e+05 step=1.56e-02 damp=1.25e-04 |dtheta|=4.05e+02 b: [2.45e-06,1.60e-01]
+[GN-exp] it=201 cost=1.440467e+05 step=9.77e-04 damp=4.18e-04 |dtheta|=2.46e+02 b: [2.44e-06,1.60e-01]
+[GN-exp] it=202 cost=1.439734e+05 step=1.95e-03 damp=1.39e-03 |dtheta|=1.57e+02 b: [2.44e-06,1.61e-01]
+[GN-exp] it=203 cost=1.439546e+05 step=4.88e-04 damp=4.65e-04 |dtheta|=2.88e+02 b: [2.44e-06,1.61e-01]
+[GN-exp] it=204 cost=1.438704e+05 step=1.95e-03 damp=1.55e-03 |dtheta|=1.40e+02 b: [2.43e-06,1.62e-01]
+[GN-exp] it=205 cost=1.438490e+05 step=4.88e-04 damp=5.16e-04 |dtheta|=2.69e+02 b: [2.43e-06,1.62e-01]
+[GN-exp] it=206 cost=1.437705e+05 step=1.95e-03 damp=1.72e-03 |dtheta|=1.28e+02 b: [2.43e-06,1.62e-01]
+[GN-exp] it=207 cost=1.437481e+05 step=4.88e-04 damp=5.74e-04 |dtheta|=2.45e+02 b: [2.43e-06,1.63e-01]
+[GN-exp] it=208 cost=1.435957e+05 step=7.81e-03 damp=1.91e-03 |dtheta|=8.44e+01 b: [2.42e-06,1.65e-01]
+[GN-exp] it=209 cost=1.435577e+05 step=9.77e-04 damp=6.38e-04 |dtheta|=2.24e+02 b: [2.42e-06,1.65e-01]
+[GN-exp] it=210 cost=1.432931e+05 step=7.81e-03 damp=2.13e-03 |dtheta|=8.27e+01 b: [2.41e-06,1.67e-01]
+[GN-exp] it=211 cost=1.432527e+05 step=9.77e-04 damp=7.08e-04 |dtheta|=2.25e+02 b: [2.41e-06,1.67e-01]
+[GN-exp] it=212 cost=1.432306e+05 step=4.88e-04 damp=2.36e-04 |dtheta|=4.21e+02 b: [2.40e-06,1.68e-01]
+[GN-exp] it=213 cost=1.432253e+05 step=4.88e-04 damp=7.87e-05 |dtheta|=6.58e+02 b: [2.39e-06,1.68e-01]
+[GN-exp] it=214 cost=1.431799e+05 step=9.77e-04 damp=2.62e-04 |dtheta|=3.88e+02 b: [2.38e-06,1.68e-01]
+[GN-exp] it=215 cost=1.431541e+05 step=9.77e-04 damp=8.75e-05 |dtheta|=6.62e+02 b: [2.36e-06,1.68e-01]
+[GN-exp] it=216 cost=1.431144e+05 step=9.77e-04 damp=2.92e-04 |dtheta|=3.42e+02 b: [2.36e-06,1.69e-01]
+[GN-exp] it=217 cost=1.429697e+05 step=3.91e-03 damp=9.72e-04 |dtheta|=1.55e+02 b: [2.35e-06,1.70e-01]
+[GN-exp] it=218 cost=1.429449e+05 step=4.88e-04 damp=3.24e-04 |dtheta|=3.15e+02 b: [2.35e-06,1.70e-01]
+[GN-exp] it=219 cost=1.427585e+05 step=3.91e-03 damp=1.08e-03 |dtheta|=1.64e+02 b: [2.34e-06,1.71e-01]
+[GN-exp] it=220 cost=1.427418e+05 step=4.88e-04 damp=3.60e-04 |dtheta|=3.11e+02 b: [2.34e-06,1.71e-01]
+[GN-exp] it=221 cost=1.427284e+05 step=9.77e-04 damp=1.20e-04 |dtheta|=4.83e+02 b: [2.32e-06,1.71e-01]
+[GN-exp] it=222 cost=1.427107e+05 step=9.77e-04 damp=4.00e-04 |dtheta|=2.78e+02 b: [2.32e-06,1.71e-01]
+[GN-exp] it=223 cost=1.426998e+05 step=4.88e-04 damp=1.33e-04 |dtheta|=4.30e+02 b: [2.31e-06,1.72e-01]
+[GN-exp] it=224 cost=1.426840e+05 step=1.95e-03 damp=4.44e-04 |dtheta|=2.04e+02 b: [2.30e-06,1.72e-01]
+[GN-exp] it=225 cost=1.426299e+05 step=1.95e-03 damp=1.48e-03 |dtheta|=1.24e+02 b: [2.30e-06,1.73e-01]
+[GN-exp] it=226 cost=1.424632e+05 step=3.91e-03 damp=4.94e-04 |dtheta|=1.59e+02 b: [2.29e-06,1.74e-01]
+[GN-exp] it=227 cost=1.424622e+05 step=9.77e-04 damp=1.65e-04 |dtheta|=4.66e+02 b: [2.28e-06,1.74e-01]
+[GN-exp] it=228 cost=1.424144e+05 step=9.77e-04 damp=5.49e-04 |dtheta|=2.23e+02 b: [2.27e-06,1.74e-01]
+[GN-exp] it=229 cost=1.423530e+05 step=3.91e-03 damp=1.83e-04 |dtheta|=2.34e+02 b: [2.24e-06,1.75e-01]
+[GN-exp] it=230 cost=1.422767e+05 step=1.95e-03 damp=6.10e-04 |dtheta|=2.35e+02 b: [2.23e-06,1.76e-01]
+[GN-exp] it=231 cost=1.422548e+05 step=4.88e-04 damp=2.03e-04 |dtheta|=4.39e+02 b: [2.23e-06,1.76e-01]
+[GN-exp] it=232 cost=1.411435e+05 step=1.56e-02 damp=6.77e-05 |dtheta|=3.63e+02 b: [1.88e-06,1.80e-01]
+[GN-exp] it=233 cost=1.410621e+05 step=1.95e-03 damp=2.26e-04 |dtheta|=4.58e+02 b: [1.87e-06,1.81e-01]
+[GN-exp] it=234 cost=1.410347e+05 step=9.77e-04 damp=7.52e-05 |dtheta|=7.53e+02 b: [1.85e-06,1.81e-01]
+[GN-exp] it=235 cost=1.409789e+05 step=1.95e-03 damp=2.51e-04 |dtheta|=4.18e+02 b: [1.84e-06,1.81e-01]
+[GN-exp] it=236 cost=1.409556e+05 step=4.88e-04 damp=8.36e-05 |dtheta|=7.30e+02 b: [1.84e-06,1.82e-01]
+[GN-exp] it=237 cost=1.408648e+05 step=9.77e-04 damp=2.79e-05 |dtheta|=1.25e+03 b: [1.80e-06,1.82e-01]
+[GN-exp] it=238 cost=1.408365e+05 step=9.77e-04 damp=9.29e-05 |dtheta|=5.62e+02 b: [1.79e-06,1.82e-01]
+[GN-exp] it=239 cost=1.408074e+05 step=9.77e-04 damp=3.10e-05 |dtheta|=9.66e+02 b: [1.75e-06,1.82e-01]
+[GN-exp] it=240 cost=1.407906e+05 step=9.77e-04 damp=1.03e-04 |dtheta|=4.40e+02 b: [1.74e-06,1.83e-01]
+[GN-exp] it=241 cost=1.406602e+05 step=3.91e-03 damp=3.44e-04 |dtheta|=2.13e+02 b: [1.73e-06,1.84e-01]
+[GN-exp] it=242 cost=1.403691e+05 step=7.81e-03 damp=1.15e-03 |dtheta|=1.52e+02 b: [1.72e-06,1.86e-01]
+[GN-exp] it=243 cost=1.402522e+05 step=3.91e-03 damp=3.82e-04 |dtheta|=2.60e+02 b: [1.71e-06,1.87e-01]
+[GN-exp] it=244 cost=1.402458e+05 step=1.95e-03 damp=1.27e-04 |dtheta|=4.40e+02 b: [1.70e-06,1.87e-01]
+[GN-exp] it=245 cost=1.401187e+05 step=3.91e-03 damp=4.25e-04 |dtheta|=2.12e+02 b: [1.69e-06,1.88e-01]
+[GN-exp] it=246 cost=1.400653e+05 step=1.95e-03 damp=1.42e-04 |dtheta|=4.31e+02 b: [1.68e-06,1.89e-01]
+[GN-exp] it=247 cost=1.398528e+05 step=7.81e-03 damp=4.72e-04 |dtheta|=1.58e+02 b: [1.66e-06,1.91e-01]
+[GN-exp] it=248 cost=1.396586e+05 step=3.91e-03 damp=1.57e-04 |dtheta|=3.97e+02 b: [1.64e-06,1.92e-01]
+[GN-exp] it=249 cost=1.396401e+05 step=9.77e-04 damp=5.24e-05 |dtheta|=7.16e+02 b: [1.62e-06,1.92e-01]
+[GN-exp] it=250 cost=1.396029e+05 step=4.88e-04 damp=1.75e-05 |dtheta|=1.51e+03 b: [1.60e-06,1.92e-01]
+[GN-exp] it=251 cost=1.226579e+05 step=7.81e-03 damp=5.83e-06 |dtheta|=3.03e+03 b: [7.81e-07,1.94e-01]
+[GN-exp] it=252 cost=1.225707e+05 step=1.95e-03 damp=1.94e-04 |dtheta|=4.29e+02 b: [7.79e-07,1.94e-01]
+[GN-exp] it=253 cost=1.225380e+05 step=9.77e-04 damp=6.47e-05 |dtheta|=6.94e+02 b: [7.76e-07,1.95e-01]
+[GN-exp] it=254 cost=1.225060e+05 step=3.91e-03 damp=2.16e-04 |dtheta|=3.54e+02 b: [7.72e-07,1.96e-01]
+[GN-exp] it=255 cost=1.224956e+05 step=9.77e-04 damp=7.19e-05 |dtheta|=5.71e+02 b: [7.70e-07,1.96e-01]
+[GN-exp] it=256 cost=1.224343e+05 step=1.95e-03 damp=2.40e-04 |dtheta|=2.49e+02 b: [7.68e-07,1.96e-01]
+[GN-exp] it=257 cost=1.224199e+05 step=4.88e-04 damp=7.99e-05 |dtheta|=4.76e+02 b: [7.67e-07,1.97e-01]
+[GN-exp] it=258 cost=1.223657e+05 step=1.95e-03 damp=2.66e-04 |dtheta|=1.97e+02 b: [7.65e-07,1.97e-01]
+[GN-exp] it=259 cost=1.223654e+05 step=9.77e-04 damp=8.88e-05 |dtheta|=3.76e+02 b: [7.63e-07,1.97e-01]
+[GN-exp] it=260 cost=1.223090e+05 step=1.95e-03 damp=2.96e-04 |dtheta|=1.41e+02 b: [7.62e-07,1.98e-01]
+[GN-exp] it=261 cost=1.223045e+05 step=9.77e-04 damp=9.87e-05 |dtheta|=2.60e+02 b: [7.60e-07,1.98e-01]
+[GN-exp] it=262 cost=1.222761e+05 step=3.91e-03 damp=3.29e-04 |dtheta|=1.18e+02 b: [7.58e-07,1.99e-01]
+[GN-exp] it=263 cost=1.222639e+05 step=9.77e-04 damp=1.10e-04 |dtheta|=2.03e+02 b: [7.56e-07,1.99e-01]
+[GN-exp] it=264 cost=1.221429e+05 step=7.81e-03 damp=3.65e-04 |dtheta|=1.10e+02 b: [7.52e-07,2.01e-01]
+[GN-exp] it=265 cost=1.218851e+05 step=1.56e-02 damp=1.22e-04 |dtheta|=1.66e+02 b: [7.28e-07,2.05e-01]
+[GN-exp] it=266 cost=1.218746e+05 step=4.88e-04 damp=4.06e-05 |dtheta|=8.02e+02 b: [7.26e-07,2.05e-01]
+[GN-exp] it=267 cost=1.218645e+05 step=4.88e-04 damp=1.35e-05 |dtheta|=1.07e+03 b: [7.20e-07,2.05e-01]
+[GN-exp] it=268 cost=1.218474e+05 step=9.77e-04 damp=4.51e-06 |dtheta|=2.04e+03 b: [6.83e-07,2.05e-01]
+[GN-exp] it=269 cost=1.218086e+05 step=3.91e-03 damp=1.50e-04 |dtheta|=3.37e+02 b: [6.79e-07,2.06e-01]
+[GN-exp] it=270 cost=1.218045e+05 step=4.88e-04 damp=5.01e-05 |dtheta|=9.42e+02 b: [6.78e-07,2.06e-01]
+[GN-exp] it=271 cost=1.217876e+05 step=9.77e-04 damp=1.67e-05 |dtheta|=1.13e+03 b: [6.69e-07,2.07e-01]
+[GN-exp] it=272 cost=1.217793e+05 step=1.95e-03 damp=5.57e-05 |dtheta|=6.32e+02 b: [6.63e-07,2.07e-01]
+[GN-exp] it=273 cost=1.217704e+05 step=4.88e-04 damp=1.86e-05 |dtheta|=1.28e+03 b: [6.60e-07,2.07e-01]
+[GN-exp] it=274 cost=1.217527e+05 step=9.77e-04 damp=6.19e-05 |dtheta|=3.99e+02 b: [6.57e-07,2.07e-01]
+[GN-exp] it=275 cost=1.215568e+05 step=7.81e-03 damp=2.06e-05 |dtheta|=4.77e+02 b: [6.05e-07,2.09e-01]
+[GN-exp] it=276 cost=1.215493e+05 step=4.88e-04 damp=6.88e-05 |dtheta|=7.35e+02 b: [6.04e-07,2.09e-01]
+[GN-exp] it=277 cost=1.214733e+05 step=3.91e-03 damp=2.29e-04 |dtheta|=3.12e+02 b: [6.02e-07,2.10e-01]
+[GN-exp] it=278 cost=1.214719e+05 step=9.77e-04 damp=7.64e-05 |dtheta|=7.89e+02 b: [6.00e-07,2.10e-01]
+[GN-exp] it=279 cost=1.214470e+05 step=9.77e-04 damp=2.55e-05 |dtheta|=5.09e+02 b: [5.96e-07,2.11e-01]
+[GN-exp] it=280 cost=1.213767e+05 step=3.91e-03 damp=8.49e-05 |dtheta|=3.99e+02 b: [5.90e-07,2.12e-01]
+[GN-exp] it=281 cost=1.213758e+05 step=4.88e-04 damp=2.83e-05 |dtheta|=8.33e+02 b: [5.88e-07,2.12e-01]
+[GN-exp] it=282 cost=1.213580e+05 step=9.77e-04 damp=9.43e-05 |dtheta|=6.83e+02 b: [5.87e-07,2.12e-01]
+[GN-exp] it=283 cost=1.213483e+05 step=4.88e-04 damp=3.14e-05 |dtheta|=1.14e+03 b: [5.85e-07,2.12e-01]
+[GN-exp] it=284 cost=1.213370e+05 step=1.95e-03 damp=1.05e-04 |dtheta|=3.10e+02 b: [5.83e-07,2.12e-01]
+[GN-exp] it=285 cost=1.213306e+05 step=4.88e-04 damp=3.49e-05 |dtheta|=1.10e+03 b: [5.82e-07,2.13e-01]
+[GN-exp] it=286 cost=1.213071e+05 step=9.77e-04 damp=1.16e-05 |dtheta|=1.14e+03 b: [5.72e-07,2.13e-01]
+[GN-exp] it=287 cost=1.212963e+05 step=4.88e-04 damp=3.88e-05 |dtheta|=9.77e+02 b: [5.71e-07,2.13e-01]
+[GN-exp] it=288 cost=1.212597e+05 step=1.95e-03 damp=1.29e-04 |dtheta|=4.59e+02 b: [5.69e-07,2.13e-01]
+[GN-exp] it=289 cost=1.212469e+05 step=4.88e-04 damp=4.31e-05 |dtheta|=7.67e+02 b: [5.68e-07,2.13e-01]
+[GN-exp] it=290 cost=1.212425e+05 step=9.77e-04 damp=1.44e-05 |dtheta|=9.00e+02 b: [5.61e-07,2.14e-01]
+[GN-exp] it=291 cost=1.212347e+05 step=4.88e-04 damp=4.79e-05 |dtheta|=9.92e+02 b: [5.60e-07,2.14e-01]
+[GN-exp] it=292 cost=1.212333e+05 step=9.77e-04 damp=1.60e-05 |dtheta|=8.87e+02 b: [5.53e-07,2.14e-01]
+[GN-exp] it=293 cost=1.212211e+05 step=4.88e-04 damp=5.33e-05 |dtheta|=7.14e+02 b: [5.52e-07,2.14e-01]
+[GN-exp] it=294 cost=1.212140e+05 step=9.77e-04 damp=1.78e-05 |dtheta|=9.94e+02 b: [5.47e-07,2.14e-01]
+[GN-exp] it=295 cost=1.212090e+05 step=9.77e-04 damp=5.92e-05 |dtheta|=8.59e+02 b: [5.45e-07,2.15e-01]
+[GN-exp] it=296 cost=1.211572e+05 step=1.95e-03 damp=1.97e-04 |dtheta|=2.26e+02 b: [5.44e-07,2.15e-01]
+[GN-exp] it=297 cost=1.211409e+05 step=9.77e-04 damp=6.57e-05 |dtheta|=6.70e+02 b: [5.43e-07,2.15e-01]
+[GN-exp] it=298 cost=1.211374e+05 step=4.88e-04 damp=2.19e-05 |dtheta|=1.01e+03 b: [5.41e-07,2.15e-01]
+[GN-exp] it=299 cost=1.211232e+05 step=1.95e-03 damp=7.31e-05 |dtheta|=3.49e+02 b: [5.38e-07,2.16e-01]
+[GN-exp] it=300 cost=1.210773e+05 step=3.91e-03 damp=2.44e-04 |dtheta|=3.57e+02 b: [5.36e-07,2.17e-01]
+[GN-exp] it=301 cost=1.210683e+05 step=4.88e-04 damp=8.12e-05 |dtheta|=7.57e+02 b: [5.36e-07,2.17e-01]
+[GN-exp] it=302 cost=1.210664e+05 step=4.88e-04 damp=2.71e-05 |dtheta|=9.90e+02 b: [5.34e-07,2.17e-01]
+[GN-exp] it=303 cost=1.210577e+05 step=9.77e-04 damp=9.02e-05 |dtheta|=7.56e+02 b: [5.33e-07,2.17e-01]
+[GN-exp] it=304 cost=1.210558e+05 step=4.88e-04 damp=3.01e-05 |dtheta|=9.48e+02 b: [5.32e-07,2.17e-01]
+[GN-exp] it=305 cost=1.210388e+05 step=9.77e-04 damp=1.00e-04 |dtheta|=4.49e+02 b: [5.31e-07,2.17e-01]
+[GN-exp] it=306 cost=1.210271e+05 step=4.88e-04 damp=3.34e-05 |dtheta|=8.70e+02 b: [5.29e-07,2.17e-01]
+[GN-exp] it=307 cost=1.210102e+05 step=9.77e-04 damp=1.11e-04 |dtheta|=5.36e+02 b: [5.28e-07,2.18e-01]
+[GN-exp] it=308 cost=1.210032e+05 step=4.88e-04 damp=3.71e-05 |dtheta|=9.35e+02 b: [5.27e-07,2.18e-01]
+[GN-exp] it=309 cost=1.209824e+05 step=9.77e-04 damp=1.24e-04 |dtheta|=4.91e+02 b: [5.26e-07,2.18e-01]
+[GN-exp] it=310 cost=1.209716e+05 step=4.88e-04 damp=4.12e-05 |dtheta|=9.18e+02 b: [5.25e-07,2.18e-01]
+[GN-exp] it=311 cost=1.209488e+05 step=9.77e-04 damp=1.37e-04 |dtheta|=5.03e+02 b: [5.25e-07,2.18e-01]
+[GN-exp] it=312 cost=1.209363e+05 step=4.88e-04 damp=4.58e-05 |dtheta|=9.29e+02 b: [5.24e-07,2.18e-01]
+[GN-exp] it=313 cost=1.209104e+05 step=9.77e-04 damp=1.53e-04 |dtheta|=4.87e+02 b: [5.23e-07,2.19e-01]
+[GN-exp] it=314 cost=1.209026e+05 step=9.77e-04 damp=5.09e-05 |dtheta|=8.82e+02 b: [5.21e-07,2.19e-01]
+[GN-exp] it=315 cost=1.208986e+05 step=9.77e-04 damp=1.70e-04 |dtheta|=7.21e+02 b: [5.21e-07,2.19e-01]
+[GN-exp] it=316 cost=1.208808e+05 step=9.77e-04 damp=5.66e-05 |dtheta|=3.94e+02 b: [5.19e-07,2.19e-01]
+[GN-exp] it=317 cost=1.208734e+05 step=4.88e-04 damp=1.89e-05 |dtheta|=9.70e+02 b: [5.17e-07,2.19e-01]
+[GN-exp] it=318 cost=1.208645e+05 step=4.88e-04 damp=6.29e-05 |dtheta|=8.49e+02 b: [5.16e-07,2.19e-01]
+[GN-exp] it=319 cost=1.208270e+05 step=1.95e-03 damp=2.10e-04 |dtheta|=3.63e+02 b: [5.15e-07,2.20e-01]
+[GN-exp] it=320 cost=1.207356e+05 step=3.91e-03 damp=6.98e-04 |dtheta|=3.00e+02 b: [5.15e-07,2.21e-01]
+[GN-exp] it=321 cost=1.207349e+05 step=9.77e-04 damp=2.33e-04 |dtheta|=6.72e+02 b: [5.15e-07,2.21e-01]
+[GN-exp] it=322 cost=1.207182e+05 step=9.77e-04 damp=7.76e-05 |dtheta|=5.21e+02 b: [5.13e-07,2.21e-01]
+[GN-exp] it=323 cost=1.206840e+05 step=1.95e-03 damp=2.59e-04 |dtheta|=5.04e+02 b: [5.13e-07,2.22e-01]
+[GN-exp] it=324 cost=1.206279e+05 step=3.91e-03 damp=8.62e-04 |dtheta|=3.22e+02 b: [5.12e-07,2.22e-01]
+[GN-exp] it=325 cost=1.206273e+05 step=1.95e-03 damp=2.87e-04 |dtheta|=5.99e+02 b: [5.12e-07,2.23e-01]
+[GN-exp] it=326 cost=1.205760e+05 step=3.91e-03 damp=9.58e-04 |dtheta|=2.95e+02 b: [5.11e-07,2.24e-01]
+[GN-exp] it=327 cost=1.205540e+05 step=9.77e-04 damp=3.19e-04 |dtheta|=5.53e+02 b: [5.11e-07,2.24e-01]
+[GN-exp] it=328 cost=1.205489e+05 step=4.88e-04 damp=1.06e-04 |dtheta|=5.90e+02 b: [5.11e-07,2.24e-01]
+[GN-exp] it=329 cost=1.205023e+05 step=1.95e-03 damp=3.55e-04 |dtheta|=2.44e+02 b: [5.10e-07,2.24e-01]
+[GN-exp] it=330 cost=1.204524e+05 step=7.81e-03 damp=1.18e-03 |dtheta|=1.69e+02 b: [5.10e-07,2.26e-01]
+[GN-exp] it=331 cost=1.204430e+05 step=4.88e-04 damp=3.94e-04 |dtheta|=4.65e+02 b: [5.10e-07,2.26e-01]
+[GN-exp] it=332 cost=1.203811e+05 step=3.91e-03 damp=1.31e-03 |dtheta|=1.69e+02 b: [5.09e-07,2.27e-01]
+[GN-exp] it=333 cost=1.203679e+05 step=9.77e-04 damp=4.38e-04 |dtheta|=4.22e+02 b: [5.09e-07,2.27e-01]
+[GN-exp] it=334 cost=1.203360e+05 step=3.91e-03 damp=1.46e-04 |dtheta|=3.09e+02 b: [5.07e-07,2.28e-01]
+[GN-exp] it=335 cost=1.202107e+05 step=7.81e-03 damp=4.87e-04 |dtheta|=4.42e+02 b: [5.05e-07,2.30e-01]
+[GN-exp] it=336 cost=1.201635e+05 step=1.95e-03 damp=1.62e-03 |dtheta|=2.16e+02 b: [5.05e-07,2.30e-01]
+[GN-exp] it=337 cost=1.201383e+05 step=9.77e-04 damp=5.41e-04 |dtheta|=3.06e+02 b: [5.05e-07,2.30e-01]
+[GN-exp] it=338 cost=1.201260e+05 step=4.88e-04 damp=1.80e-04 |dtheta|=4.50e+02 b: [5.05e-07,2.30e-01]
+[GN-exp] it=339 cost=1.200794e+05 step=1.95e-03 damp=6.01e-04 |dtheta|=2.68e+02 b: [5.05e-07,2.31e-01]
+[GN-exp] it=340 cost=1.200664e+05 step=9.77e-04 damp=2.00e-04 |dtheta|=4.78e+02 b: [5.04e-07,2.31e-01]
+[GN-exp] it=341 cost=1.199671e+05 step=3.91e-03 damp=6.68e-04 |dtheta|=3.10e+02 b: [5.04e-07,2.32e-01]
+[GN-exp] it=342 cost=1.199195e+05 step=1.95e-03 damp=2.23e-03 |dtheta|=1.39e+02 b: [5.04e-07,2.32e-01]
+[GN-exp] it=343 cost=1.198959e+05 step=1.95e-03 damp=7.42e-04 |dtheta|=2.24e+02 b: [5.03e-07,2.32e-01]
+[GN-exp] it=344 cost=1.198863e+05 step=9.77e-04 damp=2.47e-04 |dtheta|=3.31e+02 b: [5.03e-07,2.33e-01]
+[GN-exp] it=345 cost=1.198475e+05 step=1.95e-03 damp=8.24e-04 |dtheta|=1.52e+02 b: [5.03e-07,2.33e-01]
+[GN-exp] it=346 cost=1.198396e+05 step=1.95e-03 damp=2.75e-04 |dtheta|=2.28e+02 b: [5.02e-07,2.33e-01]
+[GN-exp] it=347 cost=1.198394e+05 step=9.77e-04 damp=9.16e-05 |dtheta|=4.37e+02 b: [5.01e-07,2.33e-01]
+[GN-exp] it=348 cost=1.198262e+05 step=9.77e-04 damp=3.05e-04 |dtheta|=3.37e+02 b: [5.01e-07,2.34e-01]
+[GN-exp] it=349 cost=1.198254e+05 step=4.88e-04 damp=1.02e-04 |dtheta|=6.37e+02 b: [5.01e-07,2.34e-01]
+[GN-exp] it=350 cost=1.198160e+05 step=1.95e-03 damp=3.39e-04 |dtheta|=2.66e+02 b: [5.00e-07,2.34e-01]
+[GN-exp] it=351 cost=1.197906e+05 step=3.91e-03 damp=1.13e-03 |dtheta|=1.79e+02 b: [5.00e-07,2.35e-01]
+[GN-exp] it=352 cost=1.197889e+05 step=1.95e-03 damp=3.77e-04 |dtheta|=3.49e+02 b: [5.00e-07,2.35e-01]
+[GN-exp] it=353 cost=1.196986e+05 step=3.91e-03 damp=1.26e-03 |dtheta|=1.77e+02 b: [4.99e-07,2.36e-01]
+[GN-exp] it=354 cost=1.196506e+05 step=1.95e-03 damp=4.19e-04 |dtheta|=2.44e+02 b: [4.99e-07,2.36e-01]
+[GN-exp] it=355 cost=1.195052e+05 step=7.81e-03 damp=1.40e-03 |dtheta|=1.17e+02 b: [4.98e-07,2.38e-01]
+[GN-exp] it=356 cost=1.194907e+05 step=1.95e-03 damp=4.65e-04 |dtheta|=3.44e+02 b: [4.98e-07,2.38e-01]
+[GN-exp] it=357 cost=1.194379e+05 step=7.81e-03 damp=1.55e-03 |dtheta|=1.46e+02 b: [4.98e-07,2.40e-01]
+[GN-exp] it=358 cost=1.193968e+05 step=1.95e-03 damp=5.17e-04 |dtheta|=3.26e+02 b: [4.97e-07,2.40e-01]
+[GN-exp] it=359 cost=1.193872e+05 step=4.88e-04 damp=1.72e-04 |dtheta|=6.17e+02 b: [4.97e-07,2.40e-01]
+[GN-exp] it=360 cost=1.193859e+05 step=9.77e-04 damp=5.74e-05 |dtheta|=1.05e+03 b: [4.96e-07,2.40e-01]
+[GN-exp] it=361 cost=1.193664e+05 step=9.77e-04 damp=1.91e-03 |dtheta|=1.61e+02 b: [4.96e-07,2.41e-01]
+[GN-exp] it=362 cost=1.193533e+05 step=1.95e-03 damp=6.38e-04 |dtheta|=2.42e+02 b: [4.95e-07,2.41e-01]
+[GN-exp] it=363 cost=1.192929e+05 step=3.91e-03 damp=2.13e-04 |dtheta|=3.62e+02 b: [4.94e-07,2.42e-01]
+[GN-exp] it=364 cost=1.192894e+05 step=4.88e-04 damp=7.09e-04 |dtheta|=1.96e+02 b: [4.94e-07,2.42e-01]
+[GN-exp] it=365 cost=1.192739e+05 step=9.77e-04 damp=2.36e-03 |dtheta|=1.27e+02 b: [4.94e-07,2.42e-01]
+[GN-exp] it=366 cost=1.192653e+05 step=4.88e-04 damp=7.88e-04 |dtheta|=1.91e+02 b: [4.94e-07,2.42e-01]
+[GN-exp] it=367 cost=1.192439e+05 step=3.91e-03 damp=2.63e-03 |dtheta|=1.19e+02 b: [4.94e-07,2.43e-01]
+[GN-exp] it=368 cost=1.191457e+05 step=7.81e-03 damp=8.76e-04 |dtheta|=1.52e+02 b: [4.93e-07,2.44e-01]
+[GN-exp] it=369 cost=1.191277e+05 step=1.95e-03 damp=2.92e-04 |dtheta|=3.58e+02 b: [4.92e-07,2.44e-01]
+[GN-exp] it=370 cost=1.191215e+05 step=9.77e-04 damp=9.73e-05 |dtheta|=6.90e+02 b: [4.91e-07,2.45e-01]
+[GN-exp] it=371 cost=1.190037e+05 step=3.91e-03 damp=3.24e-04 |dtheta|=2.67e+02 b: [4.90e-07,2.45e-01]
+[GN-exp] it=372 cost=1.189909e+05 step=9.77e-04 damp=1.08e-03 |dtheta|=1.84e+02 b: [4.90e-07,2.46e-01]
+[GN-exp] it=373 cost=1.189908e+05 step=9.77e-04 damp=3.60e-04 |dtheta|=3.43e+02 b: [4.90e-07,2.46e-01]
+[GN-exp] it=374 cost=1.189743e+05 step=3.91e-03 damp=1.20e-04 |dtheta|=5.67e+02 b: [4.87e-07,2.46e-01]
+[GN-exp] it=375 cost=1.186303e+05 step=1.56e-02 damp=4.00e-04 |dtheta|=2.66e+02 b: [4.84e-07,2.49e-01]
+[GN-exp] it=376 cost=1.186209e+05 step=4.88e-04 damp=1.33e-04 |dtheta|=6.54e+02 b: [4.84e-07,2.49e-01]
+[GN-exp] it=377 cost=1.185771e+05 step=3.91e-03 damp=4.45e-04 |dtheta|=2.51e+02 b: [4.83e-07,2.50e-01]
+[GN-exp] it=378 cost=1.185740e+05 step=9.77e-04 damp=1.48e-04 |dtheta|=5.39e+02 b: [4.83e-07,2.50e-01]
+[GN-exp] it=379 cost=1.185707e+05 step=4.88e-04 damp=4.94e-05 |dtheta|=1.03e+03 b: [4.82e-07,2.50e-01]
+[GN-exp] it=380 cost=1.185446e+05 step=1.95e-03 damp=1.65e-04 |dtheta|=4.01e+02 b: [4.81e-07,2.51e-01]
+[GN-exp] it=381 cost=1.185075e+05 step=1.95e-03 damp=5.49e-04 |dtheta|=2.24e+02 b: [4.81e-07,2.51e-01]
+[GN-exp] it=382 cost=1.184286e+05 step=3.91e-03 damp=1.83e-04 |dtheta|=2.64e+02 b: [4.79e-07,2.52e-01]
+[GN-exp] it=383 cost=1.183724e+05 step=7.81e-03 damp=6.10e-04 |dtheta|=1.77e+02 b: [4.78e-07,2.53e-01]
+[GN-exp] it=384 cost=1.183684e+05 step=1.95e-03 damp=2.03e-04 |dtheta|=3.82e+02 b: [4.77e-07,2.53e-01]
+[GN-exp] it=385 cost=1.181531e+05 step=7.81e-03 damp=6.78e-04 |dtheta|=1.36e+02 b: [4.76e-07,2.55e-01]
+[GN-exp] it=386 cost=1.181319e+05 step=9.77e-04 damp=2.26e-04 |dtheta|=3.92e+02 b: [4.76e-07,2.55e-01]
+[GN-exp] it=387 cost=1.181193e+05 step=9.77e-04 damp=7.53e-05 |dtheta|=5.64e+02 b: [4.75e-07,2.55e-01]
+[GN-exp] it=388 cost=1.181144e+05 step=4.88e-04 damp=2.51e-05 |dtheta|=1.15e+03 b: [4.74e-07,2.55e-01]
+[GN-exp] it=389 cost=1.181089e+05 step=9.77e-04 damp=8.37e-05 |dtheta|=6.45e+02 b: [4.73e-07,2.55e-01]
+[GN-exp] it=390 cost=1.180798e+05 step=7.81e-03 damp=2.79e-04 |dtheta|=2.32e+02 b: [4.71e-07,2.56e-01]
+[GN-exp] it=391 cost=1.179416e+05 step=7.81e-03 damp=9.30e-04 |dtheta|=2.05e+02 b: [4.70e-07,2.58e-01]
+[GN-exp] it=392 cost=1.178213e+05 step=7.81e-03 damp=3.10e-04 |dtheta|=2.16e+02 b: [4.68e-07,2.59e-01]
+[GN-exp] it=393 cost=1.177983e+05 step=9.77e-04 damp=1.03e-04 |dtheta|=6.54e+02 b: [4.67e-07,2.59e-01]
+[GN-exp] it=394 cost=1.177861e+05 step=9.77e-04 damp=3.44e-05 |dtheta|=1.46e+03 b: [4.65e-07,2.59e-01]
+[GN-exp] it=395 cost=1.177817e+05 step=4.88e-04 damp=1.15e-04 |dtheta|=8.02e+02 b: [4.65e-07,2.60e-01]
+[GN-exp] it=396 cost=1.177669e+05 step=9.77e-04 damp=3.83e-05 |dtheta|=7.99e+02 b: [4.63e-07,2.60e-01]
+[GN-exp] it=397 cost=1.177334e+05 step=1.95e-03 damp=1.28e-04 |dtheta|=4.80e+02 b: [4.62e-07,2.60e-01]
+[GN-exp] it=398 cost=1.175503e+05 step=7.81e-03 damp=4.25e-04 |dtheta|=1.79e+02 b: [4.60e-07,2.61e-01]
+[GN-exp] it=399 cost=1.175410e+05 step=4.88e-04 damp=1.42e-04 |dtheta|=7.93e+02 b: [4.60e-07,2.61e-01]
+[GN-exp] it=400 cost=1.173869e+05 step=7.81e-03 damp=4.72e-04 |dtheta|=2.09e+02 b: [4.59e-07,2.63e-01]
+[GN-exp] it=401 cost=1.173786e+05 step=9.77e-04 damp=1.57e-04 |dtheta|=7.57e+02 b: [4.59e-07,2.63e-01]
+[GN-exp] it=402 cost=1.172331e+05 step=1.56e-02 damp=5.25e-04 |dtheta|=2.72e+02 b: [4.56e-07,2.65e-01]
+[GN-exp] it=403 cost=1.172235e+05 step=9.77e-04 damp=1.75e-04 |dtheta|=4.29e+02 b: [4.56e-07,2.66e-01]
+[GN-exp] it=404 cost=1.171649e+05 step=7.81e-03 damp=5.83e-04 |dtheta|=2.71e+02 b: [4.55e-07,2.67e-01]
+[GN-exp] it=405 cost=1.170811e+05 step=3.91e-03 damp=1.94e-04 |dtheta|=2.36e+02 b: [4.54e-07,2.67e-01]
+[GN-exp] it=406 cost=1.170647e+05 step=9.77e-04 damp=6.48e-05 |dtheta|=4.68e+02 b: [4.53e-07,2.68e-01]
+[GN-exp] it=407 cost=1.169606e+05 step=3.91e-03 damp=2.16e-05 |dtheta|=8.08e+02 b: [4.40e-07,2.68e-01]
+[GN-exp] it=408 cost=1.169539e+05 step=4.88e-04 damp=7.20e-05 |dtheta|=6.11e+02 b: [4.39e-07,2.68e-01]
+[GN-exp] it=409 cost=1.168916e+05 step=3.91e-03 damp=2.40e-04 |dtheta|=2.86e+02 b: [4.38e-07,2.69e-01]
+[GN-exp] it=410 cost=1.168767e+05 step=1.95e-03 damp=8.00e-05 |dtheta|=5.24e+02 b: [4.37e-07,2.69e-01]
+[GN-exp] it=411 cost=1.168676e+05 step=9.77e-04 damp=2.67e-05 |dtheta|=7.91e+02 b: [4.34e-07,2.69e-01]
+[GN-exp] it=412 cost=1.168566e+05 step=7.81e-03 damp=8.89e-05 |dtheta|=3.56e+02 b: [4.29e-07,2.71e-01]
+[GN-exp] it=413 cost=1.167942e+05 step=3.91e-03 damp=2.96e-04 |dtheta|=3.02e+02 b: [4.28e-07,2.71e-01]
+[GN-exp] it=414 cost=1.167781e+05 step=9.77e-04 damp=9.88e-05 |dtheta|=6.48e+02 b: [4.27e-07,2.71e-01]
+[GN-exp] it=415 cost=1.167706e+05 step=9.77e-04 damp=3.29e-05 |dtheta|=8.01e+02 b: [4.25e-07,2.72e-01]
+[GN-exp] it=416 cost=1.167375e+05 step=1.95e-03 damp=1.10e-04 |dtheta|=4.87e+02 b: [4.24e-07,2.72e-01]
+[GN-exp] it=417 cost=1.165689e+05 step=7.81e-03 damp=3.66e-04 |dtheta|=2.03e+02 b: [4.23e-07,2.73e-01]
+[GN-exp] it=418 cost=1.165617e+05 step=9.77e-04 damp=1.22e-04 |dtheta|=7.78e+02 b: [4.22e-07,2.73e-01]
+[GN-exp] it=419 cost=1.165452e+05 step=9.77e-04 damp=4.07e-05 |dtheta|=7.49e+02 b: [4.21e-07,2.73e-01]
+[GN-exp] it=420 cost=1.165031e+05 step=3.91e-03 damp=1.36e-04 |dtheta|=4.07e+02 b: [4.19e-07,2.74e-01]
+[GN-exp] it=421 cost=1.164672e+05 step=7.81e-03 damp=4.52e-04 |dtheta|=2.98e+02 b: [4.18e-07,2.75e-01]
+[GN-exp] it=422 cost=1.164595e+05 step=4.88e-04 damp=1.51e-04 |dtheta|=8.09e+02 b: [4.18e-07,2.75e-01]
+[GN-exp] it=423 cost=1.164443e+05 step=1.95e-03 damp=5.02e-04 |dtheta|=3.96e+02 b: [4.18e-07,2.76e-01]
+[GN-exp] it=424 cost=1.164417e+05 step=9.77e-04 damp=1.67e-04 |dtheta|=5.46e+02 b: [4.17e-07,2.76e-01]
+[GN-exp] it=425 cost=1.164416e+05 step=4.88e-04 damp=5.58e-05 |dtheta|=7.83e+02 b: [4.17e-07,2.76e-01]
+[GN-exp] it=426 cost=1.164295e+05 step=9.77e-04 damp=1.86e-04 |dtheta|=4.44e+02 b: [4.16e-07,2.76e-01]
+[GN-exp] it=427 cost=1.164237e+05 step=4.88e-04 damp=6.20e-05 |dtheta|=6.83e+02 b: [4.16e-07,2.76e-01]
+[GN-exp] it=428 cost=1.164139e+05 step=1.95e-03 damp=2.07e-04 |dtheta|=3.97e+02 b: [4.15e-07,2.76e-01]
+[GN-exp] it=429 cost=1.163951e+05 step=9.77e-04 damp=6.88e-05 |dtheta|=5.51e+02 b: [4.15e-07,2.77e-01]
+[GN-exp] it=430 cost=1.163136e+05 step=7.81e-03 damp=2.29e-04 |dtheta|=3.14e+02 b: [4.13e-07,2.78e-01]
+[GN-exp] it=431 cost=1.162859e+05 step=1.95e-03 damp=7.65e-04 |dtheta|=1.81e+02 b: [4.12e-07,2.78e-01]
+[GN-exp] it=432 cost=1.162678e+05 step=9.77e-04 damp=2.55e-04 |dtheta|=2.87e+02 b: [4.12e-07,2.78e-01]
+[GN-exp] it=433 cost=1.162597e+05 step=4.88e-04 damp=8.50e-05 |dtheta|=4.37e+02 b: [4.12e-07,2.78e-01]
+[GN-exp] it=434 cost=1.162354e+05 step=1.95e-03 damp=2.83e-04 |dtheta|=2.30e+02 b: [4.11e-07,2.79e-01]
+[GN-exp] it=435 cost=1.162204e+05 step=9.77e-04 damp=9.44e-05 |dtheta|=3.97e+02 b: [4.11e-07,2.79e-01]
+[GN-exp] it=436 cost=1.162139e+05 step=4.88e-04 damp=3.15e-05 |dtheta|=6.54e+02 b: [4.10e-07,2.79e-01]
+[GN-exp] it=437 cost=1.161798e+05 step=1.95e-03 damp=1.05e-04 |dtheta|=3.39e+02 b: [4.09e-07,2.79e-01]
+[GN-exp] it=438 cost=1.161605e+05 step=9.77e-04 damp=3.50e-05 |dtheta|=6.33e+02 b: [4.07e-07,2.79e-01]
+[GN-exp] it=439 cost=1.161531e+05 step=9.77e-04 damp=1.17e-05 |dtheta|=1.47e+03 b: [4.02e-07,2.79e-01]
+[GN-exp] it=440 cost=1.161470e+05 step=9.77e-04 damp=3.89e-05 |dtheta|=8.90e+02 b: [4.01e-07,2.79e-01]
+[GN-exp] it=441 cost=1.161132e+05 step=1.95e-03 damp=1.30e-04 |dtheta|=5.21e+02 b: [4.00e-07,2.80e-01]
+[GN-exp] it=442 cost=1.161063e+05 step=1.95e-03 damp=4.32e-05 |dtheta|=1.19e+03 b: [3.98e-07,2.80e-01]
+[GN-exp] it=443 cost=1.160927e+05 step=9.77e-04 damp=1.44e-03 |dtheta|=1.19e+02 b: [3.98e-07,2.80e-01]
+[GN-exp] it=444 cost=1.160732e+05 step=9.77e-04 damp=4.80e-04 |dtheta|=1.78e+02 b: [3.98e-07,2.80e-01]
+[GN-exp] it=445 cost=1.160445e+05 step=1.95e-03 damp=1.60e-04 |dtheta|=3.16e+02 b: [3.97e-07,2.81e-01]
+[GN-exp] it=446 cost=1.160356e+05 step=1.95e-03 damp=5.33e-05 |dtheta|=6.62e+02 b: [3.95e-07,2.81e-01]
+[GN-exp] it=447 cost=1.160022e+05 step=1.95e-03 damp=1.78e-04 |dtheta|=6.85e+02 b: [3.94e-07,2.81e-01]
+[GN-exp] it=448 cost=1.159727e+05 step=1.95e-03 damp=5.92e-05 |dtheta|=8.31e+02 b: [3.92e-07,2.81e-01]
+[GN-exp] it=449 cost=1.159385e+05 step=3.91e-03 damp=1.97e-04 |dtheta|=5.97e+02 b: [3.91e-07,2.82e-01]
+[GN-exp] it=450 cost=1.159338e+05 step=4.88e-04 damp=6.58e-05 |dtheta|=1.29e+03 b: [3.91e-07,2.82e-01]
+[GN-exp] it=451 cost=1.159033e+05 step=7.81e-03 damp=2.19e-04 |dtheta|=4.33e+02 b: [3.89e-07,2.83e-01]
+[GN-exp] it=452 cost=1.159018e+05 step=4.88e-04 damp=7.31e-05 |dtheta|=1.30e+03 b: [3.89e-07,2.83e-01]
+[GN-exp] it=453 cost=1.158629e+05 step=1.95e-03 damp=2.44e-04 |dtheta|=6.63e+02 b: [3.88e-07,2.84e-01]
+[GN-exp] it=454 cost=1.158201e+05 step=3.91e-03 damp=8.13e-05 |dtheta|=6.60e+02 b: [3.86e-07,2.84e-01]
+[GN-exp] it=455 cost=1.157916e+05 step=1.95e-03 damp=2.71e-04 |dtheta|=6.21e+02 b: [3.85e-07,2.84e-01]
+[GN-exp] it=456 cost=1.157017e+05 step=3.91e-03 damp=9.03e-05 |dtheta|=6.44e+02 b: [3.83e-07,2.85e-01]
+[GN-exp] it=457 cost=1.156961e+05 step=4.88e-04 damp=3.01e-05 |dtheta|=7.30e+02 b: [3.82e-07,2.85e-01]
+[GN-exp] it=458 cost=1.156880e+05 step=4.88e-04 damp=1.00e-04 |dtheta|=4.49e+02 b: [3.82e-07,2.85e-01]
+[GN-exp] it=459 cost=1.156790e+05 step=4.88e-04 damp=3.34e-04 |dtheta|=3.25e+02 b: [3.82e-07,2.85e-01]
+[GN-exp] it=460 cost=1.156782e+05 step=4.88e-04 damp=1.11e-04 |dtheta|=5.00e+02 b: [3.82e-07,2.85e-01]
+[GN-exp] it=461 cost=1.156718e+05 step=4.88e-04 damp=3.72e-04 |dtheta|=3.24e+02 b: [3.82e-07,2.85e-01]
+[GN-exp] it=462 cost=1.156640e+05 step=9.77e-04 damp=1.24e-03 |dtheta|=1.78e+02 b: [3.82e-07,2.86e-01]
+[GN-exp] it=463 cost=1.156558e+05 step=4.88e-04 damp=4.13e-04 |dtheta|=2.88e+02 b: [3.82e-07,2.86e-01]
+[GN-exp] it=464 cost=1.156550e+05 step=1.95e-03 damp=1.38e-03 |dtheta|=1.34e+02 b: [3.82e-07,2.86e-01]
+[GN-exp] it=465 cost=1.156478e+05 step=1.95e-03 damp=4.59e-04 |dtheta|=2.03e+02 b: [3.81e-07,2.86e-01]
+[GN-exp] it=466 cost=1.156296e+05 step=1.95e-03 damp=1.53e-04 |dtheta|=3.40e+02 b: [3.81e-07,2.86e-01]
+[GN-exp] it=467 cost=1.156215e+05 step=9.77e-04 damp=5.10e-05 |dtheta|=6.27e+02 b: [3.80e-07,2.87e-01]
+[GN-exp] it=468 cost=1.155509e+05 step=7.81e-03 damp=1.70e-04 |dtheta|=1.88e+02 b: [3.78e-07,2.88e-01]
+[GN-exp] it=469 cost=1.155456e+05 step=7.81e-03 damp=5.66e-05 |dtheta|=5.09e+02 b: [3.71e-07,2.89e-01]
+[GN-exp] it=470 cost=1.155248e+05 step=1.95e-03 damp=1.89e-04 |dtheta|=6.38e+02 b: [3.70e-07,2.89e-01]
+[GN-exp] it=471 cost=1.155134e+05 step=1.95e-03 damp=6.29e-05 |dtheta|=7.12e+02 b: [3.69e-07,2.89e-01]
+[GN-exp] it=472 cost=1.154829e+05 step=3.91e-03 damp=2.10e-04 |dtheta|=4.97e+02 b: [3.68e-07,2.90e-01]
+[GN-exp] it=473 cost=1.154731e+05 step=4.88e-04 damp=6.99e-05 |dtheta|=1.11e+03 b: [3.68e-07,2.90e-01]
+[GN-exp] it=474 cost=1.154654e+05 step=4.88e-04 damp=2.33e-05 |dtheta|=1.58e+03 b: [3.67e-07,2.90e-01]
+[GN-exp] it=475 cost=1.154193e+05 step=3.91e-03 damp=7.77e-05 |dtheta|=3.35e+02 b: [3.64e-07,2.90e-01]
+[GN-exp] it=476 cost=1.154041e+05 step=9.77e-04 damp=2.59e-04 |dtheta|=2.11e+02 b: [3.64e-07,2.90e-01]
+[GN-exp] it=477 cost=1.153955e+05 step=4.88e-04 damp=8.63e-05 |dtheta|=3.10e+02 b: [3.64e-07,2.90e-01]
+[GN-exp] it=478 cost=1.153699e+05 step=1.95e-03 damp=2.88e-04 |dtheta|=1.71e+02 b: [3.63e-07,2.91e-01]
+[GN-exp] it=479 cost=1.152416e+05 step=7.81e-03 damp=9.59e-05 |dtheta|=3.01e+02 b: [3.60e-07,2.92e-01]
+[GN-exp] it=480 cost=1.152217e+05 step=3.91e-03 damp=3.20e-04 |dtheta|=2.41e+02 b: [3.59e-07,2.92e-01]
+[GN-exp] it=481 cost=1.151560e+05 step=3.91e-03 damp=1.07e-04 |dtheta|=3.22e+02 b: [3.58e-07,2.93e-01]
+[GN-exp] it=482 cost=1.151257e+05 step=1.95e-03 damp=3.55e-05 |dtheta|=9.58e+02 b: [3.55e-07,2.93e-01]
+[GN-exp] it=483 cost=1.151241e+05 step=4.88e-04 damp=1.18e-05 |dtheta|=9.70e+02 b: [3.53e-07,2.93e-01]
+[GN-exp] it=484 cost=1.150776e+05 step=3.91e-03 damp=3.95e-05 |dtheta|=4.09e+02 b: [3.49e-07,2.94e-01]
+[GN-exp] it=485 cost=1.150700e+05 step=9.77e-04 damp=1.32e-03 |dtheta|=1.85e+02 b: [3.49e-07,2.94e-01]
+[GN-exp] it=486 cost=1.150621e+05 step=9.77e-04 damp=4.38e-04 |dtheta|=2.25e+02 b: [3.49e-07,2.94e-01]
+[GN-exp] it=487 cost=1.150466e+05 step=9.77e-04 damp=1.46e-04 |dtheta|=2.96e+02 b: [3.49e-07,2.94e-01]
+[GN-exp] it=488 cost=1.150302e+05 step=9.77e-04 damp=4.87e-05 |dtheta|=5.15e+02 b: [3.48e-07,2.94e-01]
+[GN-exp] it=489 cost=1.150250e+05 step=1.95e-03 damp=1.62e-05 |dtheta|=8.63e+02 b: [3.43e-07,2.94e-01]
+[GN-exp] it=490 cost=1.150175e+05 step=4.88e-04 damp=5.41e-05 |dtheta|=1.48e+03 b: [3.42e-07,2.94e-01]
+[GN-exp] it=491 cost=1.150142e+05 step=4.88e-04 damp=1.80e-05 |dtheta|=1.66e+03 b: [3.41e-07,2.94e-01]
+[GN-exp] it=492 cost=1.149804e+05 step=1.95e-03 damp=6.01e-05 |dtheta|=7.20e+02 b: [3.40e-07,2.95e-01]
+[GN-exp] it=493 cost=1.149370e+05 step=3.91e-03 damp=2.00e-04 |dtheta|=5.83e+02 b: [3.39e-07,2.95e-01]
+[GN-exp] it=494 cost=1.149281e+05 step=4.88e-04 damp=6.68e-05 |dtheta|=1.36e+03 b: [3.39e-07,2.95e-01]
+[GN-exp] it=495 cost=1.149199e+05 step=4.88e-04 damp=2.23e-05 |dtheta|=1.73e+03 b: [3.38e-07,2.95e-01]
+[GN-exp] it=496 cost=1.149017e+05 step=9.77e-04 damp=7.43e-05 |dtheta|=6.40e+02 b: [3.37e-07,2.95e-01]
+[GN-exp] it=497 cost=1.148855e+05 step=9.77e-04 damp=2.48e-05 |dtheta|=8.68e+02 b: [3.36e-07,2.96e-01]
+[GN-exp] it=498 cost=1.148543e+05 step=3.91e-03 damp=8.25e-05 |dtheta|=4.79e+02 b: [3.34e-07,2.96e-01]
+[GN-exp] it=499 cost=1.148504e+05 step=4.88e-04 damp=2.75e-05 |dtheta|=8.23e+02 b: [3.33e-07,2.96e-01]
+
+ -------------------- Summary --------------------
+[GN-exp] done in 2.94s, final cost=1.148504e+05
+
+----------------- Inertial Parameters of "base_link" ------------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |    16.520002|     3.018351|   -13.501651|        -81.7|
+|c_x (m)      |     0.006394|     0.018344|     0.011949|        186.9|
+|c_y (m)      |    -0.000098|     0.164503|     0.164601|     167752.3|
+|c_z (m)      |     0.000911|    -0.137799|    -0.138710|     -15219.7|
+|I_xx (kg.m^2)|     0.131454|     0.185325|     0.053872|         41.0|
+|I_xy (kg.m^2)|     0.000010|    -0.011814|    -0.011824|    -114078.0|
+|I_xz (kg.m^2)|     0.132129|     0.080925|    -0.051205|        -38.8|
+|I_yy (kg.m^2)|    -0.000096|     0.005135|     0.005231|       5433.9|
+|I_yz (kg.m^2)|     0.000001|     0.046269|     0.046268|    3131881.4|
+|I_zz (kg.m^2)|     0.132116|     0.107041|    -0.025074|        -19.0|
+
+--------------- Inertial Parameters of "front_left_hip" ---------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     1.680000|     5.883654|     4.203654|        250.2|
+|c_x (m)      |    -0.005374|    -0.226644|    -0.221270|      -4117.2|
+|c_y (m)      |     0.012842|     0.027423|     0.014581|        113.5|
+|c_z (m)      |     0.000099|     0.012686|     0.012587|      12746.4|
+|I_xx (kg.m^2)|     0.002391|     0.009588|     0.007197|        301.0|
+|I_xy (kg.m^2)|     0.000126|     0.046006|     0.045879|      36283.6|
+|I_xz (kg.m^2)|     0.002057|     0.504722|     0.502665|      24433.3|
+|I_yy (kg.m^2)|    -0.000009|     0.044120|     0.044128|     512675.1|
+|I_yz (kg.m^2)|     0.000222|    -0.003332|    -0.003554|      -1603.3|
+|I_zz (kg.m^2)|     0.002396|     0.504906|     0.502510|      20973.9|
+
+------------ Inertial Parameters of "front_left_upper_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     2.340000|     0.308428|    -2.031572|        -86.8|
+|c_x (m)      |     0.005142|     0.128596|     0.123454|       2400.7|
+|c_y (m)      |    -0.002432|     0.025980|     0.028413|       1168.1|
+|c_z (m)      |    -0.121009|    -0.024163|     0.096846|         80.0|
+|I_xx (kg.m^2)|     0.061769|     0.001021|    -0.060748|        -98.3|
+|I_xy (kg.m^2)|     0.000373|    -0.001602|    -0.001975|       -529.9|
+|I_xz (kg.m^2)|     0.060024|     0.008616|    -0.051408|        -85.6|
+|I_yy (kg.m^2)|     0.002721|     0.002164|    -0.000557|        -20.5|
+|I_yz (kg.m^2)|    -0.006834|     0.000438|     0.007272|        106.4|
+|I_zz (kg.m^2)|     0.004651|     0.008243|     0.003592|         77.2|
+
+------------ Inertial Parameters of "front_left_lower_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     0.350000|     0.573378|     0.223378|         63.8|
+|c_x (m)      |     0.002258|    -0.059514|    -0.061772|      -2735.8|
+|c_y (m)      |     0.000046|     0.035519|     0.035473|      76988.8|
+|c_z (m)      |    -0.180082|     0.018396|     0.198478|        110.2|
+|I_xx (kg.m^2)|     0.015349|     0.008335|    -0.007014|        -45.7|
+|I_xy (kg.m^2)|     0.000000|     0.000793|     0.000792|     364567.3|
+|I_xz (kg.m^2)|     0.015402|     0.002252|    -0.013150|        -85.4|
+|I_yy (kg.m^2)|     0.000179|     0.000623|     0.000443|        247.4|
+|I_yz (kg.m^2)|    -0.000025|    -0.000475|    -0.000450|      -1769.8|
+|I_zz (kg.m^2)|     0.000152|     0.010196|     0.010045|       6622.0|
+
+-------------- Inertial Parameters of "front_right_hip" ---------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     1.680000|     8.400084|     6.720084|        400.0|
+|c_x (m)      |    -0.005374|    -0.254363|    -0.248989|      -4632.9|
+|c_y (m)      |    -0.012842|    -0.014415|    -0.001574|        -12.3|
+|c_z (m)      |    -0.000099|     0.007096|     0.007194|       7285.4|
+|I_xx (kg.m^2)|     0.002391|     0.003170|     0.000779|         32.6|
+|I_xy (kg.m^2)|    -0.000105|    -0.027575|    -0.027470|     -26050.2|
+|I_xz (kg.m^2)|     0.002057|     1.052167|     1.050109|      51043.2|
+|I_yy (kg.m^2)|     0.000009|     0.037355|     0.037347|     433884.9|
+|I_yz (kg.m^2)|    -0.000226|     0.000716|     0.000942|        416.8|
+|I_zz (kg.m^2)|     0.002396|     1.052547|     1.050152|      43831.5|
+
+----------- Inertial Parameters of "front_right_upper_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     2.340000|     0.151032|    -2.188968|        -93.5|
+|c_x (m)      |     0.005142|     0.182638|     0.177495|       3451.6|
+|c_y (m)      |     0.002432|    -0.041056|    -0.043488|      -1787.9|
+|c_z (m)      |    -0.121009|     0.032093|     0.153103|        126.5|
+|I_xx (kg.m^2)|     0.061769|     0.000450|    -0.061319|        -99.3|
+|I_xy (kg.m^2)|    -0.000373|     0.001175|     0.001548|        415.3|
+|I_xz (kg.m^2)|     0.060024|     0.005412|    -0.054612|        -91.0|
+|I_yy (kg.m^2)|     0.002721|    -0.000814|    -0.003534|       -129.9|
+|I_yz (kg.m^2)|     0.006834|     0.000183|    -0.006652|        -97.3|
+|I_zz (kg.m^2)|     0.004652|     0.005490|     0.000839|         18.0|
+
+----------- Inertial Parameters of "front_right_lower_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     0.350000|     0.686532|     0.336532|         96.2|
+|c_x (m)      |     0.002258|    -0.048448|    -0.050706|      -2245.7|
+|c_y (m)      |     0.000046|    -0.032711|    -0.032757|     -71094.1|
+|c_z (m)      |    -0.180082|    -0.001358|     0.178724|         99.2|
+|I_xx (kg.m^2)|     0.015349|     0.000742|    -0.014607|        -95.2|
+|I_xy (kg.m^2)|     0.000000|    -0.001088|    -0.001088|    -500744.4|
+|I_xz (kg.m^2)|     0.015402|     0.001615|    -0.013787|        -89.5|
+|I_yy (kg.m^2)|     0.000179|    -0.000045|    -0.000225|       -125.3|
+|I_yz (kg.m^2)|    -0.000025|    -0.000030|    -0.000005|        -19.5|
+|I_zz (kg.m^2)|     0.000152|     0.002354|     0.002202|       1451.8|
+
+--------------- Inertial Parameters of "rear_left_hip" ----------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     1.680000|     0.787140|    -0.892860|        -53.1|
+|c_x (m)      |    -0.005374|     0.335486|     0.340860|       6342.4|
+|c_y (m)      |    -0.012842|     0.040671|     0.053513|        416.7|
+|c_z (m)      |    -0.000099|     0.163393|     0.163492|     165557.7|
+|I_xx (kg.m^2)|     0.002391|     0.039821|     0.037430|       1565.3|
+|I_xy (kg.m^2)|    -0.000105|    -0.023853|    -0.023747|     -22520.3|
+|I_xz (kg.m^2)|     0.002057|     0.233521|     0.231464|      11250.9|
+|I_yy (kg.m^2)|     0.000009|    -0.002203|    -0.002212|     -25699.4|
+|I_yz (kg.m^2)|    -0.000226|    -0.000260|    -0.000034|        -14.9|
+|I_zz (kg.m^2)|     0.002396|     0.199489|     0.197093|       8226.3|
+
+------------ Inertial Parameters of "rear_left_upper_leg" -------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     2.340000|     0.865658|    -1.474342|        -63.0|
+|c_x (m)      |     0.005142|     0.012422|     0.007280|        141.6|
+|c_y (m)      |    -0.002432|     0.001216|     0.003648|        150.0|
+|c_z (m)      |    -0.121009|    -0.041739|     0.079270|         65.5|
+|I_xx (kg.m^2)|     0.061769|     0.008186|    -0.053583|        -86.7|
+|I_xy (kg.m^2)|     0.000373|    -0.001372|    -0.001745|       -468.3|
+|I_xz (kg.m^2)|     0.060024|     0.021646|    -0.038378|        -63.9|
+|I_yy (kg.m^2)|     0.002721|     0.009830|     0.007110|        261.3|
+|I_yz (kg.m^2)|    -0.006834|     0.000991|     0.007825|        114.5|
+|I_zz (kg.m^2)|     0.004651|     0.013737|     0.009085|        195.3|
+
+------------ Inertial Parameters of "rear_left_lower_leg" -------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     0.350000|     0.753219|     0.403219|        115.2|
+|c_x (m)      |     0.002258|    -0.058085|    -0.060343|      -2672.5|
+|c_y (m)      |     0.000046|     0.015874|     0.015828|      34351.0|
+|c_z (m)      |    -0.180082|     0.004267|     0.184350|        102.4|
+|I_xx (kg.m^2)|     0.015349|     0.029622|     0.014273|         93.0|
+|I_xy (kg.m^2)|     0.000000|    -0.000455|    -0.000456|    -209640.4|
+|I_xz (kg.m^2)|     0.015402|     0.002606|    -0.012796|        -83.1|
+|I_yy (kg.m^2)|     0.000179|     0.000175|    -0.000004|         -2.2|
+|I_yz (kg.m^2)|    -0.000025|    -0.000348|    -0.000322|      -1267.5|
+|I_zz (kg.m^2)|     0.000152|     0.032194|     0.032043|      21124.3|
+
+--------------- Inertial Parameters of "rear_right_hip" ---------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     1.680000|     8.242867|     6.562867|        390.6|
+|c_x (m)      |    -0.005374|     0.239521|     0.244895|       4556.7|
+|c_y (m)      |    -0.012842|    -0.021097|    -0.008256|        -64.3|
+|c_z (m)      |    -0.000099|     0.001240|     0.001339|       1356.1|
+|I_xx (kg.m^2)|     0.002391|     0.004687|     0.002296|         96.0|
+|I_xy (kg.m^2)|    -0.000105|     0.034262|     0.034367|      32591.3|
+|I_xz (kg.m^2)|     0.002057|     0.855476|     0.853419|      41482.5|
+|I_yy (kg.m^2)|     0.000009|     0.015558|     0.015550|     180654.2|
+|I_yz (kg.m^2)|    -0.000226|     0.000570|     0.000796|        352.1|
+|I_zz (kg.m^2)|     0.002396|     0.858434|     0.856038|      35729.6|
+
+------------ Inertial Parameters of "rear_right_upper_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     2.340000|     0.070347|    -2.269653|        -97.0|
+|c_x (m)      |     0.005142|    -0.129943|    -0.135085|      -2626.9|
+|c_y (m)      |     0.002432|     0.336579|     0.334146|      13737.5|
+|c_z (m)      |    -0.121009|     0.291617|     0.412626|        341.0|
+|I_xx (kg.m^2)|     0.061769|     0.015414|    -0.046354|        -75.0|
+|I_xy (kg.m^2)|    -0.000373|     0.003349|     0.003721|        998.6|
+|I_xz (kg.m^2)|     0.060024|     0.008033|    -0.051991|        -86.6|
+|I_yy (kg.m^2)|     0.002721|     0.002947|     0.000227|          8.3|
+|I_yz (kg.m^2)|     0.006834|    -0.007635|    -0.014469|       -211.7|
+|I_zz (kg.m^2)|     0.004652|     0.009967|     0.005316|        114.3|
+
+------------ Inertial Parameters of "rear_right_lower_leg" ------------
+|Parameter    |A priori     |Identified   |Change       |error %      |
+|mass (kg)    |     0.350000|     0.759111|     0.409111|        116.9|
+|c_x (m)      |     0.002258|    -0.059051|    -0.061309|      -2715.3|
+|c_y (m)      |     0.000046|     0.012180|     0.012133|      26333.6|
+|c_z (m)      |    -0.180082|     0.000060|     0.180142|        100.0|
+|I_xx (kg.m^2)|     0.015349|     0.000598|    -0.014751|        -96.1|
+|I_xy (kg.m^2)|     0.000000|     0.000542|     0.000542|     249199.1|
+|I_xz (kg.m^2)|     0.015402|     0.003120|    -0.012282|        -79.7|
+|I_yy (kg.m^2)|     0.000179|     0.000028|    -0.000151|        -84.3|
+|I_yz (kg.m^2)|    -0.000025|     0.000085|     0.000111|        435.1|
+|I_zz (kg.m^2)|     0.000152|     0.002779|     0.002628|       1732.3|
+
+Robot total mass: 34.000002 ---- Identified total mass: 30.499802553242024
+
+--------------------Torque Prediction Errors--------------------
+RMSE for joint torques prediction using Nominal parameters: total= 64.02106179109617
+per_joints=[1.08153074 2.27600527 2.6980067  1.06684552 2.22533297 2.81970388
+ 1.07124045 1.85115899 3.64005336 1.04998427 1.85552162 3.73913828]
+
+--------------------Torque Prediction Errors--------------------
+RMSE for joint torques prediction using Identified parameters: total= 32.88109203270158
+per_joints=[0.91142339 1.61369661 1.97615131 0.92543124 1.63615132 1.94560041
+ 1.05072001 1.70238919 2.31095075 0.87020012 1.65264337 2.32192172]
+
+--------------------Torque Prediction Errors--------------------
+RMSE for joint torques prediction using Nominal (held-out wobble) parameters: total= 17.29825514787378
+per_joints=[0.30279223 1.20127111 1.1566699  0.28159762 1.16997408 1.17820538
+ 0.97785232 0.796023   2.15740599 0.69357763 1.11830674 1.90090023]
+
+--------------------Torque Prediction Errors--------------------
+RMSE for joint torques prediction using Identified (held-out wobble) parameters: total= 3.546206300915424
+per_joints=[0.33830511 0.35124953 0.61738474 0.31806386 0.38502855 0.55702
+ 0.86760491 0.64654096 0.47744107 0.60803549 0.67202943 0.38405564]
